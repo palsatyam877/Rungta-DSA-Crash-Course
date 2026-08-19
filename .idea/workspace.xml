@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="" />
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Namah Parvati Pateh Har Har Mahadev">
+      <change beforePath="$PROJECT_DIR$/src/Lec1/Lec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec1/Lec.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/palsatyam877/Rungta-DSA-Sem-V.git",
+    "accountId": "a4149f69-dd78-4637-8910-b94233f41e80"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
 }]]></component>
@@ -21,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Lec.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -36,7 +55,20 @@
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
     </task>
+    <task id="LOCAL-00001" summary="Namah Parvati Pateh Har Har Mahadev">
+      <option name="closed" value="true" />
+      <created>1787165926085</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1787165926085</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Namah Parvati Pateh Har Har Mahadev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Namah Parvati Pateh Har Har Mahadev" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
