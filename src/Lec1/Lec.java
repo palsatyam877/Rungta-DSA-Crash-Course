@@ -66,7 +66,27 @@ public class Lec {
 
     }
 
+    public static class myComp implements Comparator<Integer> {
+
+        @Override
+        public int compare(Integer a , Integer b) {
+//            if(a.compareTo(b) == 0)
+//                 return 1;
+            return a.compareTo(b);
+        }
+    }
+
+
     public static void main(String [] args) {
+
+         Map<Integer , Integer> mp = new TreeMap<>(new myComp());
+         mp.put(1 , 56);
+         mp.put(6 , 43);
+         mp.put(16 , 2);
+         mp.put(1 , 56);
+
+         System.out.println(mp.get(6));
+         System.out.println(mp);
 
         // https://www.codechef.com/problems/CHOCGM
 
@@ -200,11 +220,11 @@ class Solution {
 }
         */
 
-        FastReader s = new FastReader();
-        int t = s.nextInt();
-
-        while (t-- > 0)
-            solve(s);
+//        FastReader s = new FastReader();
+//        int t = s.nextInt();
+//
+//        while (t-- > 0)
+//            solve(s);
 
        /*
 class Solution {
@@ -236,8 +256,9 @@ class Solution {
     }
 }
 */
-        // https://leetcode.com/problems/roman-to-integer/description/?topicSlugs=array
         // https://www.geeksforgeeks.org/problems/minimum-vertical-sum-1593518814/1
+
+        // https://leetcode.com/problems/roman-to-integer/description/?topicSlugs=array
 
         // https://leetcode.com/problems/kth-largest-element-in-an-array/
         // https://leetcode.com/problems/top-k-frequent-elements/description/
