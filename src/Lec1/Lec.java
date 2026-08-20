@@ -181,6 +181,40 @@ class Codechef
         while (t-- > 0)
             solve(s);
 
+       /*
+class Solution {
+    public long f(long X , long N , long M) {
+        if(N == 0)
+            return 1;
+        else if(N == 1)
+            return (X % M);
+
+        if(N % 2 == 0) {
+            long T = f(X , N / 2 , M);
+
+            T = (T * T) % M;
+            return T;
+        } else {
+            long T = f(X , (N  - 1)/ 2 , M);
+
+            T = (T * T) % M;
+
+            return (X * T) % M;
+        }
+    }
+
+    public int powMod(int x, int n, int m) {
+        // code here
+        long X = (long)x , N = (long)n , M = (long)m;
+
+        return (int)f(X , N , M);
+    }
+
+
+}
+
+        */
+
         // https://leetcode.com/problems/roman-to-integer/description/?topicSlugs=array
         // https://www.geeksforgeeks.org/problems/minimum-vertical-sum-1593518814/1
 
