@@ -256,20 +256,138 @@ class Solution {
     }
 }
 */
+
         // https://www.geeksforgeeks.org/problems/minimum-vertical-sum-1593518814/1
 
-        // https://leetcode.com/problems/roman-to-integer/description/?topicSlugs=array
+        /*
+class Solution {
+    public int minSum(int[][] A) {
+         int ans = 1000000000;
+         int MR = 0;
+
+         for(int i = 0; i < A.length; ++i)
+             MR = Math.max(A[i].length , MR);
+
+         for(int c = 0; c < MR; ++c) {
+             int tot = 0;
+
+             for(int i = 0; i < A.length; ++i)
+                 if(A[i].length >= c + 1)
+                     tot += A[i][c];
+
+             ans = Math.min(ans , tot);
+         }
+
+         return ans;
+    }
+}
+        */
 
         // https://leetcode.com/problems/kth-largest-element-in-an-array/
-        // https://leetcode.com/problems/top-k-frequent-elements/description/
+
+        /*
+class Solution {
+    public class Pair  implements Comparable<Pair> {
+        Integer first , second;
+
+        Pair(Integer first , Integer second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        @Override
+        public int compareTo(Pair right) {
+            if(this.first.compareTo(right.first) == 0)
+               return this.second.compareTo(right.second);
+
+            return this.first.compareTo(right.first);
+        }
+    }
+
+    public int findKthLargest(int[] X, int k) {
+        Set<Pair> S = new TreeSet<>();
+
+        for(int i = 0; i < k; ++i)
+            S.add(new Pair(X[i] , i));
+
+        for(int i = k; i < X.length; ++i) {
+            Iterator<Pair> it = S.iterator();
+            Pair T = it.next();
+
+            if(T.first < X[i]) {
+                S.remove(T);
+                S.add(new Pair(X[i] , i));
+            }
+        }
+
+        Iterator<Pair> it = S.iterator();
+        Pair T = it.next();
+
+        return T.first;
+    }
+}
+        */
+
+/*
+class Solution {
+    public class Pair  implements Comparable<Pair> {
+        Integer first , second;
+
+        Pair(Integer first , Integer second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        @Override
+        public int compareTo(Pair right) {
+            if(this.first.compareTo(right.first) == 0)
+               return this.second.compareTo(right.second);
+
+            return this.first.compareTo(right.first);
+        }
+    }
+
+    public int findKthLargest(int[] X, int k) {
+        Set<Pair> S = new TreeSet<>();
+
+        for(int i = 0; i < k; ++i)
+            S.add(new Pair(X[i] , i));
+
+        for(int i = k; i < X.length; ++i) {
+            Iterator<Pair> it = S.iterator();
+            Pair T = it.next();
+
+            if(T.first < X[i]) {
+                S.remove(T);
+                S.add(new Pair(X[i] , i));
+            }
+        }
+
+        Iterator<Pair> it = S.iterator();
+        Pair T = it.next();
+
+        return T.first;
+    }
+}
+
+*/
 
         // Making Map store Duplicate keys
-
-        // https://leetcode.com/problems/k-closest-points-to-origin/
-        // https://leetcode.com/problems/meeting-rooms-iii/
-
         // Ascending and Descinding iterator from a given point in Set ***** IMP
 
-        // https://leetcode.com/problems/find-median-from-data-stream/
+        /*
+        int N = 100;
+
+        for(int i = 0; i < N; i += 10)
+            for(int j = i; j < i + 10; ++j)
+                System.out.print(j + " ");
+        */
+
+        int N = 10;
+
+        for(int i = 0; i < 10; ++i)
+            for(int j = i; j < i + 10; ++j)
+                System.out.println("*");
+
     }
 }
