@@ -70,6 +70,8 @@ public class Lec {
 
         // https://www.codechef.com/problems/CHOCGM
 
+        // https://www.geeksforgeeks.org/problems/modular-exponentiation-for-large-numbers5537/1
+
         FastReader s = new FastReader();
         int t = s.nextInt();
 
