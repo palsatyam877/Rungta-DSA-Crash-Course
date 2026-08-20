@@ -175,6 +175,31 @@ class Codechef
 
         // https://www.geeksforgeeks.org/problems/modular-exponentiation-for-large-numbers5537/1
 
+        /*
+class Solution {
+    public int powMod(int x, int n, int m) {
+        // code here
+        long X = (long)x , N = (long)n , M = (long)m;
+
+        ArrayList<Long> A = new ArrayList<>();
+        A.add(X % M);
+
+        for(int i = 1; i <= 31; ++i)
+            A.add((A.getLast() * A.getLast())%M);
+
+        long ans = 1;
+
+        for(int bit = 0; bit <= 31; ++bit)
+            if((N & ((long)1 << bit)) != 0) {
+               ans *= A.get(bit);
+               ans %= M;
+            }
+
+        return (int)ans;
+    }
+}
+        */
+
         FastReader s = new FastReader();
         int t = s.nextInt();
 
@@ -209,12 +234,8 @@ class Solution {
 
         return (int)f(X , N , M);
     }
-
-
 }
-
-        */
-
+*/
         // https://leetcode.com/problems/roman-to-integer/description/?topicSlugs=array
         // https://www.geeksforgeeks.org/problems/minimum-vertical-sum-1593518814/1
 
