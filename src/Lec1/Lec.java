@@ -63,29 +63,7 @@ public class Lec {
     }
 
     public static void solve(FastReader s) {
-          int n = s.nextInt();
-          int [] a = new int [n + 1];
-          int tot = 0 , e = 0 , o = 0;
 
-          for(int i = 1; i <= n; ++i) {
-              a[i] = s.nextInt();
-              tot += a[i];
-
-              e += (a[i] %  2 == 0) ? 1 : 0;
-              o += (a[i] %  2 != 0) ? 1 : 0;
-          }
-
-          int ans = 0;
-
-          if(tot % 2 == 0) {
-              if(o % 2 == 0)
-                 ans = tot - (o / 2);
-              else
-                 ans = tot - ((o / 2) + 1);
-          } else
-              ans = o / 2;
-
-          System.out.println(ans);
     }
 
     public static void main(String [] args) {
