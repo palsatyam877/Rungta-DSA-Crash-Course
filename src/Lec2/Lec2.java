@@ -65,12 +65,54 @@ class Solution {
 
         */
 
-
         // https://leetcode.com/problems/roman-to-integer/description/?topicSlugs=array
+/*
+class Solution {
+    public int romanToInt(String s) {
+        int Ans = 0;
+
+        Map<Character , Integer> mp = new HashMap<>();
+        mp.put('I' , 1);
+        mp.put('V' , 5);
+        mp.put('X' , 10);
+        mp.put('L' , 50);
+        mp.put('C' , 100);
+        mp.put('D' , 500);
+        mp.put('M' , 1000);
+
+        HashSet<String> hs = new HashSet<>();
+
+        String [] S = { "IV" , "IX" , "XL" , "XC" , "CD" , "CM"};
+
+        Ans = mp.get(s.charAt(0));
+
+        for(int i = 1; i < s.length(); ++i) {
+            Ans += mp.get(s.charAt(i));
+
+            StringBuffer C = new StringBuffer();
+
+            C.append(s.charAt(i - 1));
+            C.append(s.charAt(i));
+
+            String T = C.toString();
+
+            for(int j = 0; j < S.length; ++j)
+                if(S[j].equals(T)) {
+                    Ans -= (mp.get(s.charAt(i - 1)) * 2);
+                }
+        }
+
+        return Ans;
+
+        // XIV
+    }
+}
+
+*/
+
         // https://leetcode.com/problems/k-closest-points-to-origin/
 
         /*     Binary Search     */
-
 
 //        TreeSet<Integer> ts = new TreeSet<>();
 
