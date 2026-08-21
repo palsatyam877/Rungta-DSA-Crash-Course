@@ -112,6 +112,57 @@ class Solution {
 
         // https://leetcode.com/problems/k-closest-points-to-origin/
 
+/*
+class Solution {
+    class Pair implements Comparable<Pair> {
+        Integer first , second;
+
+        Pair(Integer first , Integer second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        @Override
+        public int compareTo(Pair Right) {
+            if(this.first.compareTo(Right.first) == 0)
+                return this.second.compareTo(Right.second);
+
+            return this.first.compareTo(Right.first);
+        }
+    }
+
+    public int[][] kClosest(int[][] P, int K) {
+        TreeSet<Pair> ts = new TreeSet<>();
+
+        for(int i = 0; i < K; ++i)
+            ts.add(new Pair( -1 * ((P[i][0] * P[i][0]) + (P[i][1] * P[i][1])) , i));
+
+        for(int i = K; i < P.length; ++i) {
+            Pair C = ts.getFirst();
+
+            int CurrDis = -C.first;
+            int Dis = (P[i][0] * P[i][0]) + (P[i][1] * P[i][1]);
+
+            if(Dis < CurrDis) {
+                ts.remove(C);
+                ts.add(new Pair(-Dis , i));
+            }
+        }
+
+        int [][] ans = new int [K][2];
+        int inx = 0;
+
+        for(Pair C : ts) {
+            ans[inx][0] = P[C.second][0];
+            ans[inx++][1] = P[C.second][1];
+        }
+
+        return ans;
+    }
+}
+
+*/
+
         /*     Binary Search     */
 
 //        TreeSet<Integer> ts = new TreeSet<>();
