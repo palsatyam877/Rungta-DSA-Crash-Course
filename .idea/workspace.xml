@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Collections Over">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="278. First Bad Version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec2/Lec2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec2/Lec2.java" afterDir="false" />
     </list>
@@ -167,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787294043630</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="278. First Bad Version">
+      <option name="closed" value="true" />
+      <created>1787300087784</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1787300087784</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +197,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/Lec1/Lec.java" />
     <MESSAGE value="Collections to Binary Search" />
     <MESSAGE value="Collections Over" />
-    <option name="LAST_COMMIT_MESSAGE" value="Collections Over" />
+    <MESSAGE value="278. First Bad Version" />
+    <option name="LAST_COMMIT_MESSAGE" value="278. First Bad Version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

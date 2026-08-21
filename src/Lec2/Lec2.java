@@ -188,11 +188,198 @@ public class Solution extends VersionControl {
 }
 
 */
-
-        // https://leetcode.com/problems/sqrtx/
         // https://leetcode.com/problems/search-in-rotated-sorted-array/
+/*
+class Solution {
+    public int search(int[] A, int T) {
+        int N = A.length;
+
+        if(A[0] < A[N - 1]) {
+            // no rotations
+            int lo = 0 , hi = N - 1;
+
+            while(lo <= hi) {
+                int mid = (lo + hi) / 2;
+
+                if(A[mid] == T)
+                    return mid;
+                else if(A[mid] > T)
+                    hi = mid - 1;
+                else
+                  lo = mid + 1;
+            }
+        } else {
+            int piv = N - 1 , lo = 0 , hi = N - 1;
+
+            while(lo <= hi) {
+                int mid = (lo + hi) / 2;
+                int ans = N - 1;
+
+                if(A[mid] > A[N - 1])
+                    lo = mid + 1;
+                else {
+                    piv = mid;
+                    hi = mid - 1;
+                }
+            }
+
+            if(T == A[N - 1])
+                return N - 1;
+
+            if(T > A[N - 1]) {
+                lo = 0; hi = piv - 1;
+
+                while(lo <= hi) {
+                    int mid = (lo + hi) / 2;
+
+                    if(A[mid] > T)
+                        hi = mid - 1;
+                    else if(A[mid] < T)
+                        lo = mid + 1;
+                    else
+                       return mid;
+                }
+
+            } else {
+                lo = piv ; hi = N - 1;
+
+                while(lo <= hi) {
+                    int mid = (lo + hi) / 2;
+
+                    if(A[mid] > T)
+                        hi = mid - 1;
+                    else if(A[mid] < T)
+                        lo = mid + 1;
+                    else
+                       return mid;
+                }
+            }
+
+            return -1;
+        }
+
+        return -1;
+    }
+}
+
+*/
+
         // https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+/*
+class Solution {
+    public int shipWithinDays(int[] W, int D) {
+        int lo = 0 , hi = 100000000 , N = W.length;
+        int ans = N - 1;
+
+        for(int i = 0; i < N; ++i)
+            lo = Math.max(lo , W[i]);
+
+        while(lo <= hi) {
+            int Capacity = (lo + hi) / 2;
+            int currW = 0 , currD = 0;
+
+            for(int i = N - 1; i >= 0; --i) {
+                if(currW + W[i] > Capacity) {
+                    currD++;
+                    currW = W[i];
+                } else
+                    currW += W[i];
+
+
+                // System.out.println(currW + " " + i);
+            }
+
+            if(currW > 0)
+                currD++;
+
+            if(currD > D)
+                lo = Capacity + 1;
+            else {
+                ans = Capacity;
+                hi = Capacity - 1;
+            }
+        }
+
+        return ans;
+    }
+}
+
+*/
+
         // https://leetcode.com/problems/koko-eating-bananas/
+/*
+class Solution {
+    public boolean Check(int S , int [] P , int H) {
+        int N = P.length;
+        int tot = 0;
+
+        for(int i = 0; i < N; ++i)
+            tot += (P[i] / S) + (P[i] % S == 0 ? 0 : 1);
+
+        return tot <= H;
+    }
+
+    public int minEatingSpeed(int[] P, int H) {
+        int T = 0;
+
+        for(int i = 0; i < P.length; ++i)
+            T = Math.max(T , P[i]);
+
+        int ans = 0;
+
+        for(int S = 1; S <= T; ++S) {
+            if(Check(S , P , H)) {
+                System.out.print("T ");
+                if(ans == 0)
+                    ans = S;
+            } else
+                System.out.print("F ");
+        }
+
+        return ans;
+    }
+}
+
+*/
+        /*
+class Solution {
+    public boolean Check(long S , int [] P , long H) {
+        int N = P.length;
+        long tot = 0;
+
+        for(int i = 0; i < N; ++i)
+            tot += (P[i] / S) + (P[i] % S == 0 ? 0 : 1);
+
+        return tot <= H;
+    }
+
+    public int minEatingSpeed(int[] P, int H) {
+        int T = 0;
+
+        for(int i = 0; i < P.length; ++i)
+            T = Math.max(T , P[i]);
+
+        int ans = 0;
+        long lo = 1 , hi = T;
+
+        while(lo <= hi) {
+            long S = (lo + hi) / 2;
+
+            if(Check(S , P , H)) {
+                ans = (int)S;
+                hi = S - 1;
+            } else {
+                lo = S + 1;
+            }
+        }
+
+        return ans;
+    }
+}
+
+
+        */
+
         // https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/
         // https://codeforces.com/contest/1873/problem/E
 
