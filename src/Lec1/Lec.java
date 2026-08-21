@@ -389,5 +389,13 @@ class Solution {
             for(int j = i; j < i + 10; ++j)
                 System.out.println("*");
 
+        StringBuffer S = new StringBuffer();
+        S.append('1');
+        S.append('a');
+        System.out.println(S.toString());
+
+        Map<Integer , Integer> M = new TreeMap<>();
+        M.put(1 , 10);
+        System.out.println(M.get(1));
     }
 }
