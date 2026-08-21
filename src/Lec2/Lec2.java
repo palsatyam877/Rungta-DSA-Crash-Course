@@ -168,6 +168,27 @@ class Solution {
 //        TreeSet<Integer> ts = new TreeSet<>();
 
         // https://leetcode.com/problems/first-bad-version/description/
+/*
+public class Solution extends VersionControl {
+    public int firstBadVersion(int n) {
+        long lo = 1 , hi = (int)n , ans = (int)n;
+
+        while(lo <= hi) {
+            long mid = (lo + hi) / 2;
+
+            if(isBadVersion((int)mid)) {
+                ans = mid;
+                hi = mid - 1;
+            } else
+                lo = mid + 1;
+        }
+
+        return (int)ans;
+    }
+}
+
+*/
+
         // https://leetcode.com/problems/sqrtx/
         // https://leetcode.com/problems/search-in-rotated-sorted-array/
         // https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
