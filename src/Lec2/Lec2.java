@@ -2,8 +2,6 @@ package Lec2;
 
 public class Lec2 {
     public static void main(String [] args) {
-        System.out.println("Jai Maa Bhavani");
-
         // https://leetcode.com/problems/top-k-frequent-elements/description/
         // https://leetcode.com/problems/roman-to-integer/description/?topicSlugs=array
         // https://leetcode.com/problems/k-closest-points-to-origin/
