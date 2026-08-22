@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="278. First Bad Version">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="875. Koko Eating Bananas">
+      <change afterPath="$PROJECT_DIR$/src/Lec3/Lec3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec2/Lec2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec2/Lec2.java" afterDir="false" />
     </list>
@@ -48,6 +49,7 @@
   "keyToString": {
     "Application.Lec.executor": "Run",
     "Application.Lec2.executor": "Run",
+    "Application.Lec3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -175,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787300087784</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="875. Koko Eating Bananas">
+      <option name="closed" value="true" />
+      <created>1787309314109</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1787309314109</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +208,8 @@
     <MESSAGE value="Collections to Binary Search" />
     <MESSAGE value="Collections Over" />
     <MESSAGE value="278. First Bad Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="278. First Bad Version" />
+    <MESSAGE value="875. Koko Eating Bananas" />
+    <option name="LAST_COMMIT_MESSAGE" value="875. Koko Eating Bananas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
