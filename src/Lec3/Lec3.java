@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
+import java.util.*;
 
 public class Lec3 {
 
@@ -106,6 +107,8 @@ public class Lec3 {
 
          while(t-- > 0)
              solve(s);
+
+         TreeSet<Integer> ts = new TreeSet<>();
     }
 }
 
@@ -209,4 +212,100 @@ class Solution {
 
 /**** Hard Problem ****/
 // https://leetcode.com/problems/meeting-rooms-iii/
+
+/*
+class Solution {
+    class Pair implements Comparable<Pair>{
+        Long first , second;
+
+        Pair(long first , long second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        @Override
+        public int compareTo(Pair R) {
+            if(this.first.compareTo(R.first) == 0)
+                 return this.second.compareTo(R.second);
+
+            return this.first.compareTo(R.first);
+        }
+
+        @Override
+        public String toString() {
+            return "{"+ this.first + " " + this.second + "}";
+        }
+    }
+
+    public int mostBooked(int N, int[][] A) {
+        ArrayList<Pair> M = new ArrayList<>();
+
+        for(int i = 0 ; i < A.length; ++i)
+            M.add(new Pair(A[i][0] , A[i][1]));
+
+        Collections.sort(M);
+
+        TreeSet<Pair> ts = new TreeSet<>();
+
+        for(int i = 0; i < N; ++i)
+            ts.add(new Pair(0 , i));
+
+        int [] ans = new int [N + 1];
+
+        TreeSet<Pair> qu = new TreeSet<>();
+
+        for(int i = 0; i < A.length; ++i) {
+            while((ts.size() > 0)) {
+                Pair Cr = ts.getFirst();
+
+                if(Cr.first <= M.get(i).first) {
+                    ts.remove(Cr);
+                    qu.add(new Pair(Cr.second , Cr.first));
+                } else
+                   break;
+            }
+
+            Pair C = new Pair(0 , 0);
+
+            if(qu.size() > 0) {
+                C = qu.getFirst();
+                qu.remove(C);
+                long temp = C.second;
+                C.second = C.first;
+                C.first = temp;
+            } else {
+                C = ts.getFirst();
+                ts.remove(C);
+            }
+
+            if(C.first <= M.get(i).first) {
+                ts.add(new Pair(M.get(i).second , C.second));
+                long X = C.second;
+                int Y = (int)X;
+                ans[Y]++;
+            } else {
+                long Dur = M.get(i).second - M.get(i).first;
+
+                ts.add(new Pair(C.first + Dur , C.second));
+                long X = C.second;
+                int Y = (int)X;
+                ans[Y]++;
+            }
+        }
+
+        int Mx = 0 , I = -1;
+
+        for(int i = N - 1; i >= 0; --i)
+            if(Mx <= ans[i]) {
+                Mx = ans[i];
+                I = i;
+            }
+
+        return I;
+    }
+
+    //
+}
+*/
+
 // https://leetcode.com/problems/find-median-from-data-stream/
