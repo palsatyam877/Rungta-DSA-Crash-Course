@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Updated Problem list">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="BS Solution">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec4/Lec4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec4/Lec4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787553751531</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="BS Solution">
+      <option name="closed" value="true" />
+      <created>1787554646231</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1787554646231</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +270,8 @@
     <MESSAGE value="E. Building an Aquarium" />
     <MESSAGE value="2402. Meeting Rooms III" />
     <MESSAGE value="Updated Problem list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Problem list" />
+    <MESSAGE value="BS Solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="BS Solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
