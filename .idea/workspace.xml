@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="BS Solution">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Reshuffle">
       <change beforePath="$PROJECT_DIR$/src/Lec4/Lec4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec4/Lec4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -241,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787554646231</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Reshuffle">
+      <option name="closed" value="true" />
+      <created>1787559574058</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1787559574058</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +278,8 @@
     <MESSAGE value="2402. Meeting Rooms III" />
     <MESSAGE value="Updated Problem list" />
     <MESSAGE value="BS Solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="BS Solution" />
+    <MESSAGE value="Reshuffle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reshuffle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

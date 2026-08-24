@@ -111,5 +111,42 @@ class Solution {
 */
 
 // https://leetcode.com/problems/reverse-words-in-a-string/submissions/2117127355/
+/*
+class Solution {
+    public String reverseWords(String S) {
+        ArrayList<ArrayList<Character>> ArL = new ArrayList<>();
+
+        int N = S.length();
+        ArrayList<Character> C = new ArrayList();
+
+        for(int i = 0; i < N; ++i)  {
+            if(S.charAt(i) == ' ') {
+                if(C.size() > 0) {
+                    ArL.add(C);
+                    C = new ArrayList<>();
+                }
+            } else {
+                C.add(S.charAt(i));
+            }
+        }
+
+        if(C.size() > 0)
+           ArL.add(C);
+
+        StringBuffer A = new StringBuffer();
+
+        for(int i = ArL.size() - 1;  i >= 0; --i) {
+            for(int j = 0; j < ArL.get(i).size(); ++j)
+                A.append(ArL.get(i).get(j));
+
+            if(i != 0)
+                A.append(' ');
+        }
+
+        return A.toString();
+    }
+}
+*/
+
 // https://leetcode.com/problems/insert-interval/submissions/2117083653/
 // https://leetcode.com/problems/subarray-product-less-than-k/submissions/2117041357/
