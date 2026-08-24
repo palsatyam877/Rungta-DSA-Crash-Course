@@ -75,6 +75,41 @@ public class Lec4 {
      }
 }
 
+// https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/
+/*
+class Solution {
+    public int minStartValue(int[] A) {
+       int hi = 10001;
+       int lo = 1;
+       int ans = -1;
+
+        while(lo <= hi) {
+          int mid = (lo + hi) / 2;
+          int X = mid;
+          boolean f = false;
+
+             for(int j = 0; j < A.length; ++j) {
+                X  += A[j];
+                if(X <= 0)
+                   f = true;
+             }
+
+             if(f) {
+                lo = mid + 1;
+                // System.out.print("F ");
+                continue;
+             }
+                // System.out.print("T ");
+
+            ans = mid;
+            hi = mid - 1;
+        }
+
+        return ans;
+    }
+}
+*/
+
 // https://leetcode.com/problems/subarray-product-less-than-k/submissions/2117041357/
 // https://leetcode.com/problems/insert-interval/submissions/2117083653/
 // https://leetcode.com/problems/reverse-words-in-a-string/submissions/2117127355/

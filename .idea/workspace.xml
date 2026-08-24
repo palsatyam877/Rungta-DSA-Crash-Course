@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="2402. Meeting Rooms III">
-      <change afterPath="$PROJECT_DIR$/src/Lec4/Lec4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Updated Problem list">
+      <change beforePath="$PROJECT_DIR$/src/Lec4/Lec4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec4/Lec4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +43,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Lec.executor": "Run",
-    "Application.Lec2.executor": "Run",
-    "Application.Lec3.executor": "Run",
-    "Application.Lec4.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Satyam/Downloads/JavaSpringBoot/Rungta-DSA-Sem-V/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Lec.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lec2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lec3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lec4.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Satyam/Downloads/JavaSpringBoot/Rungta-DSA-Sem-V/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -225,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787391023097</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Updated Problem list">
+      <option name="closed" value="true" />
+      <created>1787553751531</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1787553751531</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +260,8 @@
     <MESSAGE value="1482. Minimum Number of Days to Make m Bouquets" />
     <MESSAGE value="E. Building an Aquarium" />
     <MESSAGE value="2402. Meeting Rooms III" />
-    <option name="LAST_COMMIT_MESSAGE" value="2402. Meeting Rooms III" />
+    <MESSAGE value="Updated Problem list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Problem list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
