@@ -133,11 +133,125 @@ class Solution {
  */
 
 // https://leetcode.com/problems/maximum-subarray/
+/*
+class Solution {
+    public int maxSubArray(int[] A) {
+        int N = A.length;
+
+        int [] P = new int [N];
+        TreeSet<Integer> ts = new TreeSet<>();
+
+        P[0] = A[0];
+        ts.add(P[0]);
+        int ans = P[0];
+
+        for(int i = 1; i < N; ++i) {
+           P[i] = A[i];
+           P[i] += P[i - 1];
+
+           if(ts.first() < 0)
+               ans = Math.max(ans , P[i] - ts.first());
+           else
+              ans = Math.max(ans , P[i]);
+
+           ts.add(P[i]);
+        }
+
+        return ans;
+    }
+}
+*/
+
+/*
+class Solution {
+    public int maxSubArray(int[] A) {
+        int l = 0;
+        int S = 0;
+        int ans = 0;
+        int n = A.length;
+
+        boolean X = false;
+
+        int mn = -10000000;
+
+        for(int i = 0; i < n; ++i) {
+            if(A[i] >= 0)
+                X = true;
+
+            mn = Math.max(A[i], mn);
+        }
+
+        if(!X)
+            return mn;
+
+        for(int r = 0 ; r < n; ++r) {
+            // System.out.println(S + " -> " + r);
+            S += A[r];
+
+            if(S < 0) {
+                l = r + 1;
+                S = 0;
+            } else {
+                ans = Math.max(ans , S);
+            }
+
+            // System.out.println(S + " " + r);
+        }
+
+        return ans;
+    }
+}
+
+ */
+
 // https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
-// https://leetcode.com/problems/sum-of-subarray-minimums/
-// https://leetcode.com/problems/sum-of-all-odd-length-subarrays/
+/*
+class Solution {
+    public int sumOddLengthSubarrays(int[] A) {
+        int Se = 0 , So = 0;
+        int cntO = 0 , cntE = 0;
+        int n = A.length;
+
+        int [] S = new int [n + 1];
+
+        for(int i = 0; i < n; ++i) {
+            int O = 0 , E = 0;
+            int e = 0 , o = 0;
+
+            o = cntE * A[i] + Se;
+            o += A[i];
+
+            e = (cntO * A[i]) + So;
+
+            O = cntE + 1;
+            E = cntO;
+
+            cntE = E;
+            cntO = O;
+
+            So = o;
+            Se = e;
+
+            S[i] = So;
+
+            // System.out.println(So + " " + Se);
+        }
+
+        int ans = 0;
+
+        for(int i = 0; i < n; ++i)
+            ans += S[i];
+
+        return ans;
+    }
+}
+
+*/
+
 // https://leetcode.com/problems/sliding-window-maximum/description/
+
 // https://leetcode.com/problems/minimum-window-substring/
+// https://leetcode.com/problems/sum-of-subarray-minimums/
 // https://cses.fi/problemset/task/1652
 // https://leetcode.com/problems/subarray-product-less-than-k/submissions/2117041357/
 // https://leetcode.com/problems/sliding-window-median/
