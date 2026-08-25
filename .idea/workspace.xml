@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Additional Problem">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Sliding Window Problem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lec2/Lec2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec2/Lec2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lec4/Lec4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec4/Lec4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lec5/SlidingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec5/SlidingWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Lec.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lec2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lec3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lec4.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Satyam/Downloads/JavaSpringBoot/Rungta-DSA-Sem-V/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Lec.executor": "Run",
+    "Application.Lec2.executor": "Run",
+    "Application.Lec3.executor": "Run",
+    "Application.Lec4.executor": "Run",
+    "Application.SlidingWindow.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/Satyam/Downloads/JavaSpringBoot/Rungta-DSA-Sem-V/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -266,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787561669567</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Sliding Window Problem">
+      <option name="closed" value="true" />
+      <created>1787630283724</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1787630283724</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,7 +307,8 @@
     <MESSAGE value="Reshuffle" />
     <MESSAGE value="151. Reverse Words in a String" />
     <MESSAGE value="Additional Problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional Problem" />
+    <MESSAGE value="Sliding Window Problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sliding Window Problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
