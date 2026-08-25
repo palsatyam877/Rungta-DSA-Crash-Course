@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Reshuffle">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Additional Problem">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lec2/Lec2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec2/Lec2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec4/Lec4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec4/Lec4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +250,23 @@
       <option name="project" value="LOCAL" />
       <updated>1787559574058</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="151. Reverse Words in a String">
+      <option name="closed" value="true" />
+      <created>1787561496980</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1787561496980</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Additional Problem">
+      <option name="closed" value="true" />
+      <created>1787561669567</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1787561669567</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,7 +297,9 @@
     <MESSAGE value="Updated Problem list" />
     <MESSAGE value="BS Solution" />
     <MESSAGE value="Reshuffle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reshuffle" />
+    <MESSAGE value="151. Reverse Words in a String" />
+    <MESSAGE value="Additional Problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional Problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -149,5 +149,128 @@ class Solution {
 */
 
 // https://www.geeksforgeeks.org/problems/intersecting-intervals/1
-// https://leetcode.com/problems/insert-interval/submissions/2117083653/
-// https://leetcode.com/problems/subarray-product-less-than-k/submissions/2117041357/
+/*
+
+class Solution {
+    public static int overlapInt(int[][] A) {
+        // code here
+        int Mx = 0;
+
+        for(int i = 0; i < A.length; ++i)
+            Mx = Math.max(Mx , A[i][1]);
+
+        int [] R = new int [Mx + 2];
+
+        for(int i = 0; i < A.length; ++i) {
+           R[A[i][0]]++; R[A[i][1] + 1]--;
+        }
+
+        int Ans = 0;
+
+        for(int i = 1; i <= Mx; ++i) {
+           R[i] += R[i - 1];
+           Ans = Math.max(Ans, R[i]);
+        }
+
+        return Ans;
+
+    }
+
+}
+*/
+
+// https://leetcode.com/problems/insert-interval/submissions/2117083653/}
+/*
+class Solution {
+    class Pair implements Comparable<Pair> {
+        Integer first, second;
+
+        Pair(Integer first, Integer second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        @Override
+        public int compareTo(Pair R) {
+            if (this.first.compareTo(R.first) == 0)
+                return this.second.compareTo(R.second);
+
+            return this.first.compareTo(R.first);
+        }
+    }
+
+    public int[][] insert(int[][] I, int[] nI) {
+        int n = I.length;
+        int N = (int) 1e5 + 1;
+
+        if(I.length == 0) {
+            int[][] Ans = new int[1][2];
+            Ans[0][0] = nI[0];
+            Ans[0][1] = nI[1];
+
+            return Ans;
+
+        }
+
+
+        long[] P = new long[N];
+
+        for (int i = 0; i < n; ++i) {
+            P[I[i][0]]++;
+            P[I[i][1]]--;
+        }
+
+        P[nI[0]]++;
+        P[nI[1]]--;
+
+        int l = 0;
+
+        ArrayList<Pair> ArL = new ArrayList<>();
+        HashSet<Integer> hs = new HashSet<>();
+
+        for(int i = 0; i < n; ++i) {
+            if(I[i][0] == I[i][1])
+               hs.add(I[i][0]);
+        }
+
+        if(nI[0] == nI[1])
+                hs.add(nI[0]);
+
+        if(I[0][0] == 0 && I[0][1] == 0)
+             hs.add(0);
+
+        if(P[0] == 0 && hs.contains(0))
+                    ArL.add(new Pair(0, 0));
+
+        for (int i = 1; i < N; ++i) {
+            P[i] += P[i - 1];
+
+            if (P[i] == 0) {
+                if (P[i - 1] != 0) {
+                    ArL.add(new Pair(l, i));
+                } else {
+                    if (hs.contains(i))
+                        ArL.add(new Pair(i , i));
+                }
+            } else {
+                if (P[i - 1] == 0)
+                    l = i;
+            }
+        }
+
+        Collections.sort(ArL);
+
+        int[][] Ans = new int[ArL.size()][2];
+        int inx = 0;
+
+        for (Pair C : ArL) {
+            Ans[inx][0] = C.first;
+            Ans[inx++][1] = C.second;
+        }
+
+        return Ans;
+
+    }
+}
+
+*/
