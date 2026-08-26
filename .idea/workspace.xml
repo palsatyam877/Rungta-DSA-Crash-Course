@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Sliding Window Problem">
-      <change afterPath="$PROJECT_DIR$/src/Lec6/Lec6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lec5/SlidingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec5/SlidingWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lec6/Lec6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec6/Lec6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787651767568</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Sliding Window Problem">
+      <option name="closed" value="true" />
+      <created>1787715992008</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1787715992008</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
