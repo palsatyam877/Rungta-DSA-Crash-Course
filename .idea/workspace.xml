@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Sliding Window Problem">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="239. Sliding Window Maximum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec6/Lec6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec6/Lec6.java" afterDir="false" />
     </list>
@@ -299,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787715992008</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="239. Sliding Window Maximum">
+      <option name="closed" value="true" />
+      <created>1787717252750</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1787717252750</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -333,7 +341,8 @@
     <MESSAGE value="151. Reverse Words in a String" />
     <MESSAGE value="Additional Problem" />
     <MESSAGE value="Sliding Window Problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sliding Window Problem" />
+    <MESSAGE value="239. Sliding Window Maximum" />
+    <option name="LAST_COMMIT_MESSAGE" value="239. Sliding Window Maximum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
