@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="239. Sliding Window Maximum">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Forest Queries">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec6/Lec6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec6/Lec6.java" afterDir="false" />
     </list>
@@ -307,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787717252750</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Forest Queries">
+      <option name="closed" value="true" />
+      <created>1787725488640</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1787725488640</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -342,7 +350,8 @@
     <MESSAGE value="Additional Problem" />
     <MESSAGE value="Sliding Window Problem" />
     <MESSAGE value="239. Sliding Window Maximum" />
-    <option name="LAST_COMMIT_MESSAGE" value="239. Sliding Window Maximum" />
+    <MESSAGE value="Forest Queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forest Queries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

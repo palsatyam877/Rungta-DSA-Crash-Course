@@ -1,5 +1,8 @@
 package Lec6;
 
+import java.util.Iterator;
+import java.util.TreeSet;
+
 public class Lec6 {
     public static void main(String [] args) {
 //        System.out.println("Jai Maa Bhavani");
@@ -9,6 +12,44 @@ public class Lec6 {
         int a = (int)x - (int)('A');
 
         System.out.println(a);
+
+        TreeSet<Integer> ts = new TreeSet<>();
+
+        ts.add(5);
+        ts.add(18);
+        ts.add(7);
+        ts.add(4);
+        ts.add(45);
+        ts.add(20);
+        ts.add(11);
+        ts.add(25);
+        ts.add(0);
+        ts.add(17);
+        ts.add(-3);
+        ts.add(23);
+        ts.add(90);
+        ts.add(100);
+//        ts.add(-10);
+
+        System.out.println(ts);
+
+//        Iterator<Integer> I = ts.tailSet( 7 , true  ).iterator();
+        Iterator<Integer> I = ts.tailSet( 10 , true  ).descendingIterator();
+
+        while(I.hasNext())
+            System.out.println(I.next());
+
+//        Integer C = 0;
+//
+//        for(int i = 0; i < 4; ++i)
+//            C = I.next();
+//
+//        System.out.println(C);
+//
+//        ts.remove(C);
+//
+//        System.out.println(ts);
+
 
 //        System.out.println(p);
     }
@@ -137,6 +178,9 @@ using namespace std;
 #define ll long long
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
 	int n , q;
 	cin >> n >> q;
 
@@ -159,15 +203,312 @@ int main() {
        }
 
 
-     for(int i = 1; i <= n; ++i)
-        for(int j = 1; j <= n; ++j)
-           cout << P[i][j] << " \n"[j == n];
+     // for(int i = 1; i <= n; ++i)
+        // for(int j = 1; j <= n; ++j)
+           // cout << P[i][j] << " \n"[j == n];
 
+	 while(q--) {
+	 	int i1 , j1 , i2 , j2;
+	 	cin >> i1 >> j1 >> i2 >> j2;
+
+	 	int ans = P[i2][j2] - P[i1 - 1][j2] - P[i2][j1 - 1] + P[i1 - 1][j1 - 1];
+
+	 	cout << ans << "\n";
+	 }
+}
+*/
+
+
+// https://leetcode.com/problems/subarray-product-less-than-k/submissions/2117041357/
+/*
+class Solution {
+    public int numSubarrayProductLessThanK(int[] A, int k) {
+        int N = A.length;
+        int l = 0;
+        long C = 1;
+        long ans = 0;
+
+        for(int r = 0; r < N; ++r) {
+            C *= A[r];
+
+            while(l <= r && C >= k) {
+                C /= A[l];
+                ++l;
+            }
+
+            if(A[r] >= k)
+               continue;
+
+            if(l <= r)
+               ans += r - l + 1;
+        }
+
+        return (int)ans;
+    }
 }
 
 */
 
-// https://leetcode.com/problems/subarray-product-less-than-k/submissions/2117041357/
 // https://leetcode.com/problems/sliding-window-median/
 
-// https://leetcode.com/problems/sum-of-subarray-minimums/
+/*
+class Solution {
+    class Pair implements Comparable<Pair> {
+        Long first, second;
+
+        Pair(Long first, Long second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        @Override
+        public int compareTo(Pair R) {
+            if (this.first.compareTo(R.first) == 0)
+                return this.second.compareTo(R.second);
+
+            return this.first.compareTo(R.first);
+        }
+
+        @Override
+        public String toString() {
+            return "{ " + this.first + " , " + this.second + " }";
+        }
+    }
+
+    public double[] medianSlidingWindow(int[] A, int k) {
+        TreeSet<Pair> ts = new TreeSet<>();
+
+        if(k == 1) {
+            double [] ans = new double [A.length];
+
+            for(int i = 0; i < A.length; ++i)
+               ans[i] = A[i] / 1.0;
+
+            return ans;
+
+        }
+
+        for (int i = 0; i < k; ++i)
+            ts.add(new Pair((long)A[i], (long)i));
+
+        int N = A.length;
+
+        double[] ans = new double[N - k + 1];
+
+        if ((k & 1) != 0) {
+        //    System.out.println(" $$ ");
+
+            int l = 0;
+            Iterator<Pair> I1 = ts.iterator();
+
+            Pair M = new Pair((long)-1, (long)-1);
+
+            for (int i = 0; i < (k / 2) + 1; ++i)
+                M = I1.next();
+
+            // System.out.println(M);
+            ans[l] = M.first;
+
+           System.out.println(ts);
+
+            for (int i = k; i < N; ++i) {
+                if (M.second == l) {
+                    // same
+
+                    Pair Tmp = new Pair((long)M.first , (long)M.second);
+
+                    Iterator<Pair> I = ts.tailSet(M, true).iterator();
+                    I.next();
+                    M = I.next();
+
+                    // System.out.println(M + " )");
+
+                    ts.remove(new Pair((long)A[l], (long)l));
+                    ts.add(new Pair((long)A[i], (long)i));
+                    // System.out.println(ts);
+                    ++l;
+
+                    if (A[i] >= M.first) {
+                        // do nothing
+                    } else {
+                        Iterator<Pair> I2 = ts.headSet(M, true).descendingIterator();
+                        M = I2.next();
+                        M = I2.next();
+                    }
+                } else if (M.first < A[l]) {
+                    // greater
+
+                    // System.out.println("--------------");
+                    System.out.println(M);
+                    ts.remove(new Pair((long)A[l], (long)l));
+                    ts.add(new Pair((long)A[i], (long)i));
+                    ++l;
+
+                    if (A[i] >= M.first) {
+                        // do nothing
+                    } else {
+                        Iterator<Pair> I = ts.headSet(M, true).descendingIterator();
+                        M = I.next();
+                        M = I.next();
+                    }
+                } else if (M.first > A[l]) {
+                    // smaller
+                    ts.remove(new Pair((long)A[l], (long)l));
+                    ts.add(new Pair((long)A[i], (long)i));
+                    ++l;
+
+                    if (A[i] < M.first) {
+                        // do nothing
+                    } else {
+                        Iterator<Pair> I = ts.tailSet(M, true).iterator();
+                        M = I.next();
+                        M = I.next();
+                    }
+                } else if (M.first == A[l]) {
+                    if (l > M.second) {
+                        // greater
+                        ts.remove(new Pair((long)A[l], (long)l));
+                        ts.add(new Pair((long)A[i], (long)i));
+                        ++l;
+
+                        if (A[i] > M.first) {
+                            // do nothing
+                        } else {
+                            Iterator<Pair> I = ts.headSet(M, true).descendingIterator();
+                            M = I.next();
+                            M = I.next();
+                        }
+                        // (long)
+                    } else {
+                        // smaller
+                        ts.remove(new Pair((long)A[l], (long)l));
+                        ts.add(new Pair((long)A[i], (long)i));
+                        ++l;
+
+                        if (A[i] < M.first) {
+                            // do nothing
+                        } else {
+                            Iterator<Pair> I = ts.tailSet(M, true).iterator();
+                            M = I.next();
+                            M = I.next();
+                        }
+                    }
+                }
+                // System.out.println(M);
+                ans[l] = M.first;
+            }
+        } else {
+            // Even
+
+        //    System.out.println(" $$ ");
+
+            int l = 0;
+            Iterator<Pair> I1 = ts.iterator();
+
+            Pair M = new Pair((long)-1, (long)-1);
+
+            for (int i = 0; i < (k / 2); ++i)
+                M = I1.next();
+
+            // System.out.println(M);
+
+            Iterator<Pair> I4 = ts.tailSet(M , true).iterator();
+            Pair M4 = I4.next();
+                 M4 = I4.next();
+
+            ans[l] = (M.first + M4.first) / 2.0;
+
+            for (int i = k; i < N; ++i) {
+                if (M.second == l) {
+                    // same
+
+                    Pair Tmp = new Pair((long)M.first , (long)M.second);
+
+                    Iterator<Pair> I = ts.tailSet(M, true).iterator();
+                    I.next();
+                    M = I.next();
+
+                    // System.out.println(M + " )");
+
+                    ts.remove(new Pair((long)A[l], (long)l));
+                    ts.add(new Pair((long)A[i], (long)i));
+                    // System.out.println(ts);
+                    ++l;
+
+                    if (A[i] >= M.first) {
+                        // do nothing
+                    } else {
+                        Iterator<Pair> I2 = ts.headSet(M, true).descendingIterator();
+                        M = I2.next();
+                        M = I2.next();
+                    }
+                } else if (M.first < A[l]) {
+                    // greater
+                    ts.remove(new Pair((long)A[l], (long)l));
+                    ts.add(new Pair((long)A[i], (long)i));
+                    ++l;
+
+                    if (A[i] >= M.first) {
+                        // do nothing
+                    } else {
+                        Iterator<Pair> I = ts.headSet(M, true).descendingIterator();
+                        M = I.next();
+                        M = I.next();
+                    }
+                } else if (M.first > A[l]) {
+                    // smaller
+                    ts.remove(new Pair((long)A[l], (long)l));
+                    ts.add(new Pair((long)A[i], (long)i));
+                    ++l;
+
+                    if (A[i] < M.first) {
+                        // do nothing
+                    } else {
+                        Iterator<Pair> I = ts.tailSet(M, true).iterator();
+                        M = I.next();
+                        M = I.next();
+                    }
+                } else if (M.first == A[l]) {
+                    if (l > M.second) {
+                        // greater
+                        ts.remove(new Pair((long)A[l], (long)l));
+                        ts.add(new Pair((long)A[i], (long)i));
+                        ++l;
+
+                        if (A[i] > M.first) {
+                            // do nothing
+                        } else {
+                            Iterator<Pair> I = ts.headSet(M, true).descendingIterator();
+                            M = I.next();
+                            M = I.next();
+                        }
+                    } else {
+                        // smaller
+                        ts.remove(new Pair((long)A[l], (long)l));
+                        ts.add(new Pair((long)A[i], (long)i));
+                        ++l;
+
+                        if (A[i] < M.first) {
+                            // do nothing
+                        } else {
+                            Iterator<Pair> I = ts.tailSet(M, true).iterator();
+                            M = I.next();
+                            M = I.next();
+                        }
+                    }
+                }
+                // System.out.println(M);
+
+                Iterator<Pair> I3 = ts.tailSet(M , true).iterator();
+                Pair M3 = I3.next();
+                     M3 = I3.next();
+
+                ans[l] = (M.first + M3.first) / 2.0;
+            }
+        }
+
+        return ans;
+    }
+}
+
+*/
