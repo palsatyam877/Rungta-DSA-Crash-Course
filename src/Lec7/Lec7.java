@@ -13,6 +13,14 @@ public class Lec7 {
         }
     }
 
+    public static void f(ListNode curr) {
+          if(curr == null)
+              return;
+
+          f(curr.next);
+          System.out.print(curr.data + " ");
+    }
+
     public static void main(String [] args) {
 //        System.out.println("Jai Maa Jagat Janani");
 
@@ -27,15 +35,178 @@ public class Lec7 {
 
         ListNode head = l1;
 
-       while(head != null) {
+        f(l1);
+
+/*       while(head != null) {
            System.out.print(head.data + " ");
            head = head.next;
-       }
+       }*/
     }
 }
 
 // https://leetcode.com/problems/add-two-numbers/?envType=problem-list-v2&envId=linked-list
+/*
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode head = null;
+        ListNode curr = head;
+        int carry = 0;
+
+        while(l1 != null && l2 != null) {
+            int sum = l1.val + l2.val + carry;
+
+            if(curr == null) {
+                head = new ListNode(sum % 10);
+                curr = head;
+            } else {
+                curr.next = new ListNode(sum % 10);
+                curr = curr.next;
+            }
+
+            carry = sum / 10;
+
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+
+        while(l1 != null) {
+            int sum = l1.val + carry;
+
+            if(curr == null) {
+                head = new ListNode(sum % 10);
+                curr = head;
+            } else {
+                curr.next = new ListNode(sum % 10);
+                curr = curr.next;
+            }
+
+            carry = sum / 10;
+            l1 = l1.next;
+        }
+
+        while(l2 != null) {
+            int sum = l2.val + carry;
+
+            if(curr == null) {
+                head = new ListNode(sum % 10);
+                curr = head;
+            } else {
+                curr.next = new ListNode(sum % 10);
+                curr = curr.next;
+            }
+
+            carry = sum / 10;
+            l2 = l2.next;
+        }
+
+        if(carry > 0)
+            curr.next = new ListNode(carry);
+
+        return head;
+    }
+}
+*/
+
 // https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/1909424473/?envType=problem-list-v2&envId=linked-list
+/*
+class Solution {
+    public int f(ListNode curr , int n) {
+        if(curr == null)
+            return n;
+
+        int N = f(curr.next , n);
+        N--;
+
+        if(N == -1)
+            curr.next = curr.next.next;
+
+        return N;
+    }
+
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        int N = f(head , n);
+        N--;
+        if(N == -1)
+           head = head.next;
+
+
+        return head;
+    }
+}
+*/
+
+/*
+
+class Solution {
+
+    public ListNode removeNthFromEnd(ListNode H, int n) {
+        int N = 0;
+
+        ListNode C = H;
+
+        while(C != null) {
+            ++N;
+            C = C.next;
+        }
+
+        if(N == n)
+           return H.next;
+
+        C = H;
+        N -= n;
+        N--;
+
+        while(N-- > 0)
+            C = C.next;
+
+         C.next = C.next.next;
+
+        return H;
+    }
+}
+*/
+
 // https://leetcode.com/problems/remove-duplicates-from-sorted-list/?envType=problem-list-v2&envId=linked-list
+/*
+class Solution {
+    public ListNode deleteDuplicates(ListNode H) {
+        ListNode T = H;
+
+        while(H != null) {
+            ListNode C = H;
+
+            while(C.next != null && C.next.val == H.val)
+                C = C.next;
+
+            H.next = C.next;
+            H = H.next;
+        }
+
+        return T;
+    }
+}
+*/
+
 // https://leetcode.com/problems/linked-list-cycle-ii/submissions/1912305370/?envType=problem-list-v2&envId=linked-list
+/*
+public class Solution {
+    public ListNode detectCycle(ListNode H) {
+
+        HashSet<ListNode> hs = new HashSet<>();
+
+        while(H != null) {
+            if(hs.contains(H))
+                return H;
+
+            hs.add(H);
+
+            H = H.next;
+        }
+
+        return null;
+    }
+}
+
+*/
+
 // https://leetcode.com/problems/rotate-list/?envType=problem-list-v2&envId=linked-list
