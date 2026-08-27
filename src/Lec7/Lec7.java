@@ -315,3 +315,7 @@ class Solution {
 }
 
 */
+
+// https://leetcode.com/problems/delete-node-in-a-linked-list/submissions/1912164378/?envType=problem-list-v2&envId=linked-list
+// https://leetcode.com/problems/copy-list-with-random-pointer/submissions/1912176981/?envType=problem-list-v2&envId=linked-list
+// https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/submissions/1912366897/?envType=problem-list-v2&envId=linked-list
