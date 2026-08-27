@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 public class Lec6 {
     public static void main(String [] args) {
-//        System.out.println("Jai Maa Bhavani");
+        System.out.println("Jai Maa Bhavani");
 
         Character x = 'D';
 

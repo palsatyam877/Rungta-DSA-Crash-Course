@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Forest Queries">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="480. Sliding Window Median">
+      <change afterPath="$PROJECT_DIR$/src/Lec7/Lec7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec6/Lec6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec6/Lec6.java" afterDir="false" />
     </list>
@@ -51,6 +52,7 @@
     "Application.Lec3.executor": "Run",
     "Application.Lec4.executor": "Run",
     "Application.Lec6.executor": "Run",
+    "Application.Lec7.executor": "Run",
     "Application.SlidingWindow.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -315,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787725488640</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="480. Sliding Window Median">
+      <option name="closed" value="true" />
+      <created>1787767189031</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1787767189031</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,7 +361,8 @@
     <MESSAGE value="Sliding Window Problem" />
     <MESSAGE value="239. Sliding Window Maximum" />
     <MESSAGE value="Forest Queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forest Queries" />
+    <MESSAGE value="480. Sliding Window Median" />
+    <option name="LAST_COMMIT_MESSAGE" value="480. Sliding Window Median" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
