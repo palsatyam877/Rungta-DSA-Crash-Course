@@ -210,3 +210,61 @@ public class Solution {
 */
 
 // https://leetcode.com/problems/rotate-list/?envType=problem-list-v2&envId=linked-list
+
+/*
+class Solution {
+    ListNode GH = null;
+
+    public int f(ListNode C , int k) {
+        // System.out.println(C.val + " : K1");
+        if(C == null)
+            return k;
+
+        // System.out.println(C.val + " : K2");
+
+        int K = f(C.next , k);
+        if(C.next == null)
+           C.next = GH;
+
+        K--;
+
+        // System.out.println(K + " : K");
+
+        if(K == -1) {
+            // System.out.println(C.val + " : Node");
+            GH = C.next;
+            C.next = null;
+        }
+
+        return K;
+    }
+
+    public ListNode rotateRight(ListNode H, int k) {
+        int N = 0;
+
+        ListNode C = H;
+
+        if(H == null || k == 0)
+            return H;
+
+        while(C != null) {
+            C = C.next;
+            ++N;
+        }
+
+        GH = H;
+
+        k %= N;
+
+        C = H;
+
+        if(k == 0)
+            return H;
+
+        f(C , k);
+
+        return GH;
+    }
+}
+
+*/

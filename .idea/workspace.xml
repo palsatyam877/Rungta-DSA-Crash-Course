@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Lets start the LinkedList">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="142. Linked List Cycle II">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec7/Lec7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec7/Lec7.java" afterDir="false" />
     </list>
@@ -332,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787805243059</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="142. Linked List Cycle II">
+      <option name="closed" value="true" />
+      <created>1787817982775</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1787817982775</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -370,7 +378,8 @@
     <MESSAGE value="Forest Queries" />
     <MESSAGE value="480. Sliding Window Median" />
     <MESSAGE value="Lets start the LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lets start the LinkedList" />
+    <MESSAGE value="142. Linked List Cycle II" />
+    <option name="LAST_COMMIT_MESSAGE" value="142. Linked List Cycle II" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
