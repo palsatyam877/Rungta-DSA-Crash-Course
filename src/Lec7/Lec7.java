@@ -268,3 +268,50 @@ class Solution {
 }
 
 */
+
+/*
+class Solution {
+    public ListNode rotateRight(ListNode H, int k) {
+        if(H == null || k == 0)
+            return H;
+
+        int N = 0;
+        ListNode C = H;
+        ListNode Last = null;
+
+        while(C != null) {
+            ++N;
+
+            if(C.next == null) {
+               Last = C;
+               C.next = H;
+               break;
+            }
+
+            C = C.next;
+        }
+
+        int sz = N;
+        k %= N;
+
+        if(k == 0) {
+           Last.next = null;
+           return H;
+        }
+
+        k = N - k;
+        k--;
+        C = H;
+
+        while(k-- > 0) {
+            C = C.next;
+        }
+
+        H = C.next;
+        C.next = null;
+
+        return H;
+    }
+}
+
+*/
