@@ -23,6 +23,7 @@ public class Lec8 {
         Node n5 = new Node(1);
         Node n6 = new Node(1);
         Node n7 = new Node(1);
+        Node n8 = new Node(1);
         Node n9 = new Node(1);
         Node n10 = new Node(1);
         Node n11 = new Node(1);
