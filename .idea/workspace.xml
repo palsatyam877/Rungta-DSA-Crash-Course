@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="142. Linked List Cycle II">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="237. Delete Node in a Linked List">
+      <change afterPath="$PROJECT_DIR$/src/Lec8/Lec8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec7/Lec7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec7/Lec7.java" afterDir="false" />
     </list>
@@ -52,6 +53,7 @@
     "Application.Lec4.executor": "Run",
     "Application.Lec6.executor": "Run",
     "Application.Lec7.executor": "Run",
+    "Application.Lec8.executor": "Run",
     "Application.SlidingWindow.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -348,7 +350,31 @@
       <option name="project" value="LOCAL" />
       <updated>1787820647027</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="61. Rotate List">
+      <option name="closed" value="true" />
+      <created>1787822190067</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1787822190067</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Updated List">
+      <option name="closed" value="true" />
+      <created>1787822396809</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1787822396809</updated>
+    </task>
+    <task id="LOCAL-00038" summary="237. Delete Node in a Linked List">
+      <option name="closed" value="true" />
+      <created>1787822976720</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1787822976720</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,8 +389,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Namah Parvati Pateh Har Har Mahadev" />
-    <MESSAGE value="Jai Maa Bhavani" />
     <MESSAGE value="first commit" />
     <MESSAGE value="Chocolate Game" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/Lec1/Lec.java" />
@@ -387,7 +411,10 @@
     <MESSAGE value="480. Sliding Window Median" />
     <MESSAGE value="Lets start the LinkedList" />
     <MESSAGE value="142. Linked List Cycle II" />
-    <option name="LAST_COMMIT_MESSAGE" value="142. Linked List Cycle II" />
+    <MESSAGE value="61. Rotate List" />
+    <MESSAGE value="Updated List" />
+    <MESSAGE value="237. Delete Node in a Linked List" />
+    <option name="LAST_COMMIT_MESSAGE" value="237. Delete Node in a Linked List" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

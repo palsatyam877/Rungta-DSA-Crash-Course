@@ -3,6 +3,7 @@ package Lec7;
 import java.awt.desktop.SystemEventListener;
 
 public class Lec7 {
+
     static class ListNode {
         Integer data;
         ListNode next;
@@ -327,4 +328,41 @@ class Solution {
 */
 
 // https://leetcode.com/problems/copy-list-with-random-pointer/submissions/1912176981/?envType=problem-list-v2&envId=linked-list
+/*
+class Solution {
+    public Node copyRandomList(Node head) {
+        Node H = null;
+        Node C1 = null;
+        Node C = head;
+        HashMap<Node , Node> mp = new HashMap<>();
+
+        while(C != null) {
+            if(C1 == null) {
+               C1 = new Node(C.val);
+               H = C1;
+            } else {
+               C1.next = new Node(C.val);
+               C1 = C1.next;
+            }
+
+            mp.put(C , C1);
+
+
+            C = C.next;
+        }
+
+        C = head;
+        C1 = H;
+
+        while(C != null) {
+            C1.random = mp.get(C.random);
+            C1 = C1.next;
+            C = C.next;
+        }
+
+        return H;
+    }
+}
+*/
+
 // https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/submissions/1912366897/?envType=problem-list-v2&envId=linked-list
