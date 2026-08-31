@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="104. Maximum Depth of Binary Tree -&gt; DFS">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="104. Maximum Depth of Binary Tree -&gt; BFS">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec9/Lec9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec9/Lec9.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -413,7 +414,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788154120457</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="104. Maximum Depth of Binary Tree -&gt; BFS">
+      <option name="closed" value="true" />
+      <created>1788155860992</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1788155860992</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,7 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="278. First Bad Version" />
     <MESSAGE value="875. Koko Eating Bananas" />
     <MESSAGE value="Continouing Binary Search" />
     <MESSAGE value="1482. Minimum Number of Days to Make m Bouquets" />
@@ -453,7 +461,8 @@
     <MESSAGE value="Tree in Between" />
     <MESSAGE value="Lets Start with Trees Properly" />
     <MESSAGE value="104. Maximum Depth of Binary Tree -&gt; DFS" />
-    <option name="LAST_COMMIT_MESSAGE" value="104. Maximum Depth of Binary Tree -&gt; DFS" />
+    <MESSAGE value="104. Maximum Depth of Binary Tree -&gt; BFS" />
+    <option name="LAST_COMMIT_MESSAGE" value="104. Maximum Depth of Binary Tree -&gt; BFS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

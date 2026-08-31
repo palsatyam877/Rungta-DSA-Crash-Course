@@ -162,7 +162,71 @@ class Solution {
 */
 
 // https://leetcode.com/problems/diameter-of-binary-tree
+/*
+class Solution {
+    class Pair {
+        Integer Depth , Daim;
+
+        Pair(Integer Depth , Integer Daim) {
+            this.Depth = Depth;
+            this.Daim = Daim;
+        }
+    }
+
+    public Pair dfs(TreeNode curr) {
+        if(curr == null)
+            return new Pair(0 , 0);
+
+        Pair C1 = dfs(curr.left);
+        Pair C2 = dfs(curr.right);
+
+        int currDaim = C1.Depth + C2.Depth + 1;
+
+        return new Pair( Math.max( C1.Depth , C2.Depth ) + 1  , Math.max( currDaim , Math.max( C1.Daim , C2.Daim ) ) );
+    }
+
+    public int diameterOfBinaryTree(TreeNode root) {
+            if(root == null)
+              return 0;
+
+            return dfs(root).Daim - 1;
+    }
+}
+
+*/
+
 // https://leetcode.com/problems/balanced-binary-tree/
+/*
+class Solution {
+    public class Pair {
+        Integer depth;
+        Boolean isBal;
+
+        Pair(Integer depth  , Boolean isBal) {
+            this.depth = depth;
+            this.isBal = isBal;
+        }
+    }
+
+    Pair dfs(TreeNode Curr) {
+        if(Curr == null)
+            return new Pair( 0 , true );
+
+        Pair L = dfs(Curr.left);
+        Pair R = dfs(Curr.right);
+
+        if(Math.abs(L.depth - R.depth) > 1 || !L.isBal || !R.isBal)
+            return new Pair(0 , false);
+
+        return new Pair(Math.max(L.depth , R.depth) + 1 , true);
+    }
+
+    public boolean isBalanced(TreeNode root) {
+        return dfs(root).isBal;
+    }
+}
+*/
+
 // https://leetcode.com/problems/same-tree
 // https://leetcode.com/problems/subtree-of-another-tree/
 // https://leetcode.com/problems/binary-tree-level-order-traversal/
