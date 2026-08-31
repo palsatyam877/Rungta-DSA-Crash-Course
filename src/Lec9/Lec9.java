@@ -270,6 +270,66 @@ class Solution {
 */
 
 // https://leetcode.com/problems/subtree-of-another-tree/
+/*
+class Solution {
+    public boolean dfs(TreeNode p , TreeNode q) {
+        if (
+                ((p.left != null) && (q.left == null)) ||
+                        ((p.left == null) && (q.left != null)) ||
+                        ((p.right != null) && (q.right == null)) ||
+                        ((p.right == null) && (q.right != null)) ||
+                        (p.val != q.val)
+        )
+
+            return false;
+
+        boolean ans = true;
+
+        if(p.left != null)
+            ans &= dfs(p.left , q.left);
+
+        if(p.right != null)
+            ans &= dfs(p.right , q.right);
+
+        return ans;
+    }
+
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if(p == null) {
+            if(q == null)
+                return true;
+            else
+                return false;
+        } else {
+            if(q == null)
+                return false;
+        }
+
+        return dfs(p , q);
+    }
+
+    public boolean dfs1(TreeNode curr , TreeNode subRoot) {
+        boolean C = isSameTree(curr , subRoot);
+
+        if(curr == null)
+            if(subRoot == null)
+              return true;
+            else
+              return false;
+
+        if(C)
+           return true;
+
+        return dfs1(curr.left , subRoot) || dfs1(curr.right , subRoot);
+    }
+
+    public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+        return dfs1(root , subRoot);
+    }
+}
+
+*/
+
 // https://leetcode.com/problems/binary-tree-level-order-traversal/
 // https://leetcode.com/problems/binary-tree-right-side-view/
 // https://leetcode.com/problems/count-good-nodes-in-binary-tree/
