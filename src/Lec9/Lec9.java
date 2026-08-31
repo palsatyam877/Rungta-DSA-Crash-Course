@@ -331,6 +331,54 @@ class Solution {
 */
 
 // https://leetcode.com/problems/binary-tree-level-order-traversal/
+/*
+class Solution {
+    class Pair {
+        Integer depth;
+        TreeNode node;
+
+        Pair(Integer depth , TreeNode node) {
+            this.depth = depth;
+            this.node = node;
+        }
+    }
+
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        if(root == null) {
+            List<List<Integer>> A = new ArrayList<>();
+
+            return A;
+        }
+
+        ArrayDeque<Pair> qu = new ArrayDeque<>();
+
+        qu.offer(new Pair(1 , root));
+
+        List<List<Integer>> ans = new ArrayList<>();
+
+        while(qu.size() > 0) {
+            Pair C = qu.poll();
+
+            if(C.depth > ans.size()) {
+                ans.add(new ArrayList<>());
+                ans.get(ans.size() - 1).add(C.node.val);
+            } else {
+                ans.get(ans.size() - 1).add(C.node.val);
+            }
+
+            if(C.node.left != null)
+                qu.offer(new Pair(C.depth + 1 , C.node.left));
+
+            if(C.node.right != null)
+                qu.offer(new Pair(C.depth + 1 , C.node.right));
+        }
+
+        return ans;
+    }
+}
+
+*/
+
 // https://leetcode.com/problems/binary-tree-right-side-view/
 // https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 // https://leetcode.com/problems/binary-tree-maximum-path-sum/
