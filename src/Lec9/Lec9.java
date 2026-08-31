@@ -228,6 +228,47 @@ class Solution {
 */
 
 // https://leetcode.com/problems/same-tree
+/*
+class Solution {
+    public boolean dfs(TreeNode p , TreeNode q) {
+        if (
+                ((p.left != null) && (q.left == null)) ||
+                        ((p.left == null) && (q.left != null)) ||
+                        ((p.right != null) && (q.right == null)) ||
+                        ((p.right == null) && (q.right != null)) ||
+                        (p.val != q.val)
+        )
+
+            return false;
+
+        boolean ans = true;
+
+        if(p.left != null)
+            ans &= dfs(p.left , q.left);
+
+        if(p.right != null)
+            ans &= dfs(p.right , q.right);
+
+        return ans;
+    }
+
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if(p == null) {
+            if(q == null)
+                return true;
+            else
+                return false;
+        } else {
+            if(q == null)
+                return false;
+        }
+
+        return dfs(p , q);
+    }
+}
+
+*/
+
 // https://leetcode.com/problems/subtree-of-another-tree/
 // https://leetcode.com/problems/binary-tree-level-order-traversal/
 // https://leetcode.com/problems/binary-tree-right-side-view/
