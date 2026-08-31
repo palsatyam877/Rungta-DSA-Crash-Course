@@ -18,7 +18,7 @@ public class Lec8 {
         }
     }
 
-    public static void dfs(Node Curr , Node Prev , ArrayList<ArrayList> adj) {
+    public static void dfs(Node Curr , Node Prev , ArrayList<ArrayList<Node>> adj) {
         System.out.print(Curr.val + " ");
 
         for(int i = 0; i < Curr.child.size(); ++i)
@@ -56,16 +56,28 @@ public class Lec8 {
 
         int [][] M = new int[16][16];
 
-        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        ArrayList<ArrayList<Node>> adj = new ArrayList<>();
 
         for(int i = 0; i <= N; ++i)
             adj.add(new ArrayList<>());
 
         for(Node C : List.of(n1 , n2 ,n3 ,n4 ,n5 ,n6 ,n7 ,n8 ,n9 ,n10 ,n11 ,n12 ,n13 ,n14 ,n15))
             for(int j = 0; j < C.child.size(); ++j) {
-                adj.get(C.val).add(C.child.get(j).val);
-                adj.get(C.child.get(j).val).add(C.val);
+                adj.get(C.val).add(C.child.get(j));
+                adj.get(C.child.get(j).val).add(C);
             }
 
+        dfs(n3, new Node(-1) , adj);
+
+//        ArrayDeque<Node> qu = new ArrayDeque<>();
+//        qu.add(n3);
+//
+//        while(qu.size() > 0) {
+//            Node C = qu.poll();
+//            System.out.print(C.val + " ");
+//
+//            for(int j = 0; j < C.child.size(); ++j)
+//                qu.add(C.child.get(j));
+//        }
     }
 }

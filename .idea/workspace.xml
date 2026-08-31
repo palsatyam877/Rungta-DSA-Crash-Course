@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Starting with Trees 1">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Tree in Between">
+      <change afterPath="$PROJECT_DIR$/src/Lec9/Lec9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec8/Lec8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec8/Lec8.java" afterDir="false" />
     </list>
@@ -53,6 +54,7 @@
     "Application.Lec6.executor": "Run",
     "Application.Lec7.executor": "Run",
     "Application.Lec8.executor": "Run",
+    "Application.Lec9.executor": "Run",
     "Application.SlidingWindow.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -389,7 +391,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787979370974</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Tree in Between">
+      <option name="closed" value="true" />
+      <created>1787984840086</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1787984840086</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,7 +414,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/Lec1/Lec.java" />
     <MESSAGE value="Collections to Binary Search" />
     <MESSAGE value="Collections Over" />
     <MESSAGE value="278. First Bad Version" />
@@ -429,7 +438,8 @@
     <MESSAGE value="237. Delete Node in a Linked List" />
     <MESSAGE value="Starting with Trees" />
     <MESSAGE value="Starting with Trees 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting with Trees 1" />
+    <MESSAGE value="Tree in Between" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tree in Between" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
