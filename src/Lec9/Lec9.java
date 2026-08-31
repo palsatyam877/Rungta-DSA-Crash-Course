@@ -100,7 +100,9 @@ public class Lec9 {
 }
 
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
-/*
+
+
+/*   DFS
 class Solution {
     public int dfs(TreeNode C) {
         if (C == null)
@@ -113,6 +115,47 @@ class Solution {
         if (R == null)
             return 0;
         return dfs(R);
+    }
+}
+*/
+
+/*   BFS
+class Solution {
+    class Pair {
+        Integer D;
+        TreeNode N;
+
+        Pair(Integer D , TreeNode N) {
+            this.D = D;
+            this.N = N;
+        }
+    }
+
+    public int maxDepth(TreeNode R) {
+        ArrayDeque<Pair> qu = new ArrayDeque<>();
+        if(R == null)
+           return 0;
+
+        int ans = 1;
+
+        qu.offer(new Pair(1 , R));
+
+        while(qu.size() > 0) {
+            Pair C = qu.poll();
+
+            int D = C.D;
+            TreeNode N = C.N;
+
+            ans = Math.max(ans , D);
+
+            if(N.left != null)
+                qu.offer(new Pair(D + 1 , N.left));
+
+            if(N.right != null)
+                qu.offer(new Pair(D + 1 , N.right));
+        }
+
+        return ans;
     }
 }
 
