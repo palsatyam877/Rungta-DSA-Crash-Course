@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="124. Binary Tree Maximum Path Sum">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Subordinates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec10/Lec10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec10/Lec10.java" afterDir="false" />
     </list>
@@ -70,14 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/Lec1/Lec.java">
-      <option name="closed" value="true" />
-      <created>1787205491928</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1787205491928</updated>
     </task>
     <task id="LOCAL-00005" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/Lec1/Lec.java">
       <option name="closed" value="true" />
@@ -463,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788243265385</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Subordinates">
+      <option name="closed" value="true" />
+      <created>1788251390330</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1788251390330</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,7 +478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="151. Reverse Words in a String" />
     <MESSAGE value="Additional Problem" />
     <MESSAGE value="Sliding Window Problem" />
     <MESSAGE value="239. Sliding Window Maximum" />
@@ -503,7 +502,8 @@
     <MESSAGE value="199. Binary Tree Right Side View" />
     <MESSAGE value="199. Binary Tree Right Side View&#10;DFS" />
     <MESSAGE value="124. Binary Tree Maximum Path Sum" />
-    <option name="LAST_COMMIT_MESSAGE" value="124. Binary Tree Maximum Path Sum" />
+    <MESSAGE value="Subordinates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subordinates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
