@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class Lec10 {
     public static void main(String [] args) {
         System.out.println("Jai Maa Bhavani");
-
     }
 }
 
@@ -87,7 +86,63 @@ class Solution {
 */
 
 // https://leetcode.com/problems/count-good-nodes-in-binary-tree/
+/*
+class Solution {
+    public int dfs(TreeNode C , int maxSoFar) {
+        int ans = C.val >= maxSoFar ? 1 : 0;
+
+        if(C.left != null)
+            ans += dfs(C.left , Math.max(maxSoFar , C.val));
+
+        if(C.right != null)
+            ans += dfs(C.right , Math.max(maxSoFar , C.val));
+
+        return  ans;
+    }
+
+    public int goodNodes(TreeNode root) {
+        return dfs(root , -100000);
+    }
+}
+
+*/
+
 // https://leetcode.com/problems/binary-tree-maximum-path-sum/
+/*
+class Solution {
+    class Pair {
+        Integer Mx , cMx;
+
+        Pair(Integer Mx , Integer cMx) {
+            this.Mx = Mx;
+            this.cMx = cMx;
+        }
+    }
+
+    public Pair dfs(TreeNode Curr) {
+        int Mn = (int)-1e9;
+        Pair C = new Pair(Curr.val , Curr.val);
+        Pair L = new Pair(Mn , Mn);
+        Pair R = new Pair(Mn , Mn);
+
+        if(Curr.left != null)
+            L = dfs(Curr.left);
+
+        if(Curr.right != null)
+            R = dfs(Curr.right);
+
+        C.Mx = Math.max( Math.max(L.Mx , R.Mx) ,  Math.max( Curr.val , Math.max( Curr.val + L.cMx + R.cMx , Math.max( Curr.val + L.cMx , Curr.val + R.cMx ))));
+        C.cMx = Math.max( Curr.val ,  Math.max( Curr.val + L.cMx , Curr.val + R.cMx ));
+
+        return C;
+    }
+
+    public int maxPathSum(TreeNode root) {
+         return dfs(root).Mx;
+    }
+}
+*/
+
 // https://cses.fi/problemset/task/1674
 
 // https://leetcode.com/problems/validate-binary-search-tree/
