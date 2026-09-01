@@ -1,13 +1,16 @@
 package Lec10;
 
+import java.util.ArrayList;
+
 public class Lec10 {
     public static void main(String [] args) {
         System.out.println("Jai Maa Bhavani");
+
     }
 }
 
 // https://leetcode.com/problems/binary-tree-right-side-view/
-/*
+/*  BFS
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         ArrayDeque<TreeNode> qu = new ArrayDeque<>();
@@ -50,6 +53,35 @@ class Solution {
         }
 
         return ans;
+    }
+}
+*/
+
+/* DFS
+class Solution {
+    public void dfs(TreeNode C , int depth , List<Integer> ans) {
+        if(depth + 1 > ans.size())
+            ans.add(0);
+
+        ans.set(depth , C.val);
+
+        if(C.left != null)
+            dfs(C.left , depth + 1 , ans);
+
+        if(C.right != null)
+            dfs(C.right , depth + 1 , ans);
+    }
+
+    public List<Integer> rightSideView(TreeNode root) {
+        if(root == null)
+           return new ArrayList<>();
+
+        List<Integer> ans = new ArrayList<>();
+
+        dfs(root , 0 , ans);
+
+        return ans;
+
     }
 }
 */
