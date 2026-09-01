@@ -1,10 +1,33 @@
 package Lec10;
+import com.sun.source.tree.ArrayAccessTree;
 
-import java.util.ArrayList;
+import java.util.*;
+
+
 
 public class Lec10 {
     public static void main(String [] args) {
         System.out.println("Jai Maa Bhavani");
+
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int [] subord = new int [n + 1];
+
+        for(int i = 2; i <= n; ++i)
+            subord[i] = sc.nextInt();
+
+        for(int i = 0; i <= n; ++i)
+            adj.add(new ArrayList<>());
+
+        for(int i = 2; i <= n; ++i)
+            adj.get(i).add(subord[i]);
+
+        for(int i = 1; i <= n; ++i) {
+            System.out.print(i + " -> ");
+            System.out.println(subord[i]);
+        }
     }
 }
 
