@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="102. Binary Tree Level Order Traversal">
-      <change afterPath="$PROJECT_DIR$/src/Lec10/Lec10.java" afterDir="false" />
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Trees Continue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lec9/Lec9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec9/Lec9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lec10/Lec10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec10/Lec10.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -456,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788173418747</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Trees Continue">
+      <option name="closed" value="true" />
+      <created>1788235173132</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1788235173132</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,7 +478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2402. Meeting Rooms III" />
     <MESSAGE value="Updated Problem list" />
     <MESSAGE value="BS Solution" />
     <MESSAGE value="Reshuffle" />
@@ -496,7 +502,8 @@
     <MESSAGE value="100. Same Tree" />
     <MESSAGE value="572. Subtree of Another Tree" />
     <MESSAGE value="102. Binary Tree Level Order Traversal" />
-    <option name="LAST_COMMIT_MESSAGE" value="102. Binary Tree Level Order Traversal" />
+    <MESSAGE value="Trees Continue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trees Continue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
