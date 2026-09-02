@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="98. Validate Binary Search Tree">
-      <change afterPath="$PROJECT_DIR$/src/Lec11/Lec11.java" afterDir="false" />
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Problem added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lec10/Lec10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec10/Lec10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lec11/Lec11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec11/Lec11.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,22 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/Lec1/Lec.java">
-      <option name="closed" value="true" />
-      <created>1787214342516</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1787214342516</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/Lec1/Lec.java">
-      <option name="closed" value="true" />
-      <created>1787215710067</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1787215710067</updated>
     </task>
     <task id="LOCAL-00008" summary="Collections to Binary Search">
       <option name="closed" value="true" />
@@ -465,7 +448,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788260358468</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="173. Binary Search Tree Iterator">
+      <option name="closed" value="true" />
+      <created>1788324526174</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1788324526175</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Problem added">
+      <option name="closed" value="true" />
+      <created>1788324823719</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1788324823719</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -480,8 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sliding Window Problem" />
-    <MESSAGE value="239. Sliding Window Maximum" />
     <MESSAGE value="Forest Queries" />
     <MESSAGE value="480. Sliding Window Median" />
     <MESSAGE value="Lets start the LinkedList" />
@@ -505,7 +502,9 @@
     <MESSAGE value="124. Binary Tree Maximum Path Sum" />
     <MESSAGE value="Subordinates" />
     <MESSAGE value="98. Validate Binary Search Tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="98. Validate Binary Search Tree" />
+    <MESSAGE value="173. Binary Search Tree Iterator" />
+    <MESSAGE value="Problem added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Problem added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
