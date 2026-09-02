@@ -258,3 +258,75 @@ class Solution {
 }
 
 */
+
+/*
+class Solution {
+    vector<vector<int>> f(int n, vector<int>& A) {
+        if (n == 0) {
+            vector<vector<int>> Ans;
+            Ans.push_back(vector<int>({}));
+            Ans.push_back(vector<int>({A[0]}));
+            return Ans;
+        }
+
+        vector<vector<int>> soFar = f(n - 1, A);
+
+        for (int i = 0; i < soFar.size(); ++i)
+            for (int j = 0; j < soFar[i].size(); ++j)
+                cout << soFar[i][j] << " \n"[j == (int)soFar[i].size() - 1];
+
+        cout << "---------------------\n";
+
+        int N = soFar.size();
+
+        for (int i = 0; i < N; ++i) {
+
+            soFar[i].push_back(A[n]);
+
+            for (int j = (int)soFar[i].size() - 1; j >= 1; --j) {
+                swap(soFar[i][j], soFar[i][j - 1]);
+
+                vector<int> tmp;
+
+                for (int k = 0; k <= (int)soFar[i].size() - 1; ++k)
+                    tmp.push_back(soFar[i][k]);
+
+                soFar.push_back(tmp);
+            }
+
+            // if (soFar[i].size() == 1)
+            //     continue;
+
+            for (int k = 1; k <= soFar[i].size() - 1; ++k) {
+                // cout << k << " <- k\n";
+                // cout << soFar.size() << " $\n";
+                // cout << soFar[i].size() << " @";
+                // cout << soFar[i][1] << " ##\n";
+                swap(soFar[i][k], soFar[i][k - 1]);
+            }
+        }
+
+        return soFar;
+    }
+
+public:
+    vector<vector<int>> permuteUnique(vector<int>& A) {
+        vector<vector<int>> X = f((int)A.size() - 1, A);
+
+        set<vector<int>> Ans;
+
+        for(int i = 0; i < X.size(); ++i) {
+            if(X[i].size() == A.size())
+                Ans.insert(X[i]);
+        }
+
+        vector<vector<int>> Ans1;
+
+        for(auto &it : Ans)
+           Ans1.push_back(it);
+
+        return Ans1;
+    }
+};
+
+*/
