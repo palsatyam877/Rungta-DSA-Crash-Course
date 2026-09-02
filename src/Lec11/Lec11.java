@@ -5,21 +5,19 @@ import java.util.*;
 
 public class Lec11 {
     public static ArrayList<ArrayList<Integer>> f(int curr , int [] A) { // 5
-        if(curr == 0)
-            return new ArrayList<ArrayList<Integer>>(List.of( new ArrayList<>() , new ArrayList<>(List.of(A[curr]))));
+        if(curr == A.length - 1)
+            return new ArrayList<ArrayList<Integer>>(List.of( new ArrayList<>() , new ArrayList<>(List.of(A[A.length - 1]))));
 
-
-        ArrayList<ArrayList<Integer>> soSFar = f(curr - 1 , A);
+        ArrayList<ArrayList<Integer>> soSFar = f(curr + 1 , A);
 
         int N = soSFar.size();
 
         for(int i = 0; i < N; ++i) {
             soSFar.add(new ArrayList<>());
 
+            soSFar.getLast().add(A[curr]);
             for(int j = 0; j < soSFar.get(i).size(); ++j)
                 soSFar.getLast().add(soSFar.get(i).get(j));
-
-            soSFar.getLast().add(A[curr]);
         }
 
         return soSFar;
@@ -48,14 +46,29 @@ public class Lec11 {
 
         // Number of Subsequences
 
-        int [] a = {4 , 3 , 12 , 9 , 7 , 5};
+//        int [] a = {4 , 3 , 12 , 9 , 7 , 5};
+//        //          0   1   2    3   4   5
+
+        int [] a = {4 , 3 , 12};
         //          0   1   2    3   4   5
         int n = a.length;
 
-        ArrayList<ArrayList<Integer>> Ans = f(n - 1 , a);
+//        ArrayList<ArrayList<Integer>> Ans = f(0 , a);
+//
+//        for(int i = 0; i < Ans.size(); ++i)
+//            System.out.println(Ans.get(i));
 
-        for(int i = 0; i < Ans.size(); ++i)
-            System.out.println(Ans.get(i));
+        /*
+        System.out.println("-------------------------------------");
+
+        for(int mask = 0; mask < (1 << n); ++mask) {
+            System.out.print("[ ");
+            for(int j = 0; j < n; ++j)
+                 if((mask & (1 << j)) != 0)
+                     System.out.print(a[j] + " ");
+            System.out.println(" ]");
+        }
+         */
     }
 }
 
@@ -197,6 +210,50 @@ class Solution {
         }
 
         return Ans;
+    }
+}
+
+*/
+
+// https://leetcode.com/problems/permutations/
+
+/*
+class Solution {
+    public List<List<Integer>> f(int n , int [] A) {
+        if(n == 0) {
+            List<List<Integer>> Ans = new ArrayList<>();
+            Ans.add(new ArrayList<>(List.of(A[0])));
+
+            return Ans;
+        }
+
+        List<List<Integer>> soFar = f(n - 1 , A);
+
+        int N = soFar.size();
+
+        for(int i = 0; i < N; ++i) {
+            soFar.get(i).add(A[n]);
+
+            for(int j = n; j >= 1; --j) {
+                Collections.swap(soFar.get(i) , j , j - 1);
+
+                List<Integer> tmp = new ArrayList<>();
+
+                for(int k = 0; k <= n; ++k)
+                   tmp.add(soFar.get(i).get(k));
+
+                soFar.add(tmp);
+            }
+
+            for(int k = 1; k <= n; ++k)
+                Collections.swap(soFar.get(i) , k , k - 1);
+        }
+
+        return soFar;
+    }
+
+    public List<List<Integer>> permute(int[] A) {
+        return f(A.length - 1 , A);
     }
 }
 
