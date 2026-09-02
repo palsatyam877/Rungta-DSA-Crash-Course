@@ -72,14 +72,6 @@
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
     </task>
-    <task id="LOCAL-00008" summary="Collections to Binary Search">
-      <option name="closed" value="true" />
-      <created>1787252513996</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1787252513996</updated>
-    </task>
     <task id="LOCAL-00009" summary="Collections to Binary Search">
       <option name="closed" value="true" />
       <created>1787283350418</created>
@@ -464,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788324823719</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Problem added">
+      <option name="closed" value="true" />
+      <created>1788324940709</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1788324940709</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

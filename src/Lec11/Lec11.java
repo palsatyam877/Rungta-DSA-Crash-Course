@@ -48,4 +48,52 @@ class BSTIterator {
 */
 
 // https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/
+/*
+class Solution {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        if(root == null) {
+             List<List<Integer>> A = new ArrayList<>();
+            return A;
+        }
+
+        ArrayDeque<TreeNode> qu = new ArrayDeque<>();
+        qu.offer(new TreeNode(-1000));
+        qu.offer(root);
+
+        List<List<Integer>> Ans = new ArrayList<>();
+        int depth = -1;
+
+        while(qu.size() > 0) {
+            TreeNode Curr = qu.poll();
+
+            if(Curr.val == -1000) {
+                if(qu.size() == 0)
+                    break;
+
+                qu.offer(new TreeNode(-1000));
+                ++depth;
+
+                Ans.add(new ArrayList<>());
+
+
+                continue;
+            } else
+                Ans.get(depth).add(Curr.val);
+
+            if(Curr.left != null)
+                qu.offer(Curr.left);
+
+            if(Curr.right != null)
+               qu.offer(Curr.right);
+        }
+
+        for(int i = 0; i < Ans.size(); ++i)
+          if((i & 1) != 0)
+           Collections.reverse(Ans.get(i));
+
+        return Ans;
+    }
+}
+ */
+
 // https://leetcode.com/problems/repeated-dna-sequences/description/
