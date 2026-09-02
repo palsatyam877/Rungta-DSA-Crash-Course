@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="103. Binary Tree Zigzag Level Order Traversal">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="187. Repeated DNA Sequences">
       <change beforePath="$PROJECT_DIR$/src/Lec11/Lec11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec11/Lec11.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,14 +70,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Collections to Binary Search">
-      <option name="closed" value="true" />
-      <created>1787284750849</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1787284750850</updated>
     </task>
     <task id="LOCAL-00011" summary="Collections to Binary Search">
       <option name="closed" value="true" />
@@ -464,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788327014709</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="187. Repeated DNA Sequences">
+      <option name="closed" value="true" />
+      <created>1788329661990</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1788329661990</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="480. Sliding Window Median" />
     <MESSAGE value="Lets start the LinkedList" />
     <MESSAGE value="142. Linked List Cycle II" />
     <MESSAGE value="61. Rotate List" />
@@ -504,7 +502,8 @@
     <MESSAGE value="173. Binary Search Tree Iterator" />
     <MESSAGE value="Problem added" />
     <MESSAGE value="103. Binary Tree Zigzag Level Order Traversal" />
-    <option name="LAST_COMMIT_MESSAGE" value="103. Binary Tree Zigzag Level Order Traversal" />
+    <MESSAGE value="187. Repeated DNA Sequences" />
+    <option name="LAST_COMMIT_MESSAGE" value="187. Repeated DNA Sequences" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

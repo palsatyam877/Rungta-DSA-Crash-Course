@@ -1,11 +1,34 @@
 package Lec11;
 
+import javax.lang.model.type.ArrayType;
 import java.util.*;
 
 public class Lec11 {
+    public static ArrayList<ArrayList<Integer>> f(int curr , int [] A) { // 5
+        if(curr == 0)
+            return new ArrayList<ArrayList<Integer>>(List.of( new ArrayList<>() , new ArrayList<>(List.of(A[curr]))));
+
+
+        ArrayList<ArrayList<Integer>> soSFar = f(curr - 1 , A);
+
+        int N = soSFar.size();
+
+        for(int i = 0; i < N; ++i) {
+            soSFar.add(new ArrayList<>());
+
+            for(int j = 0; j < soSFar.get(i).size(); ++j)
+                soSFar.getLast().add(soSFar.get(i).get(j));
+
+            soSFar.getLast().add(A[curr]);
+        }
+
+        return soSFar;
+    }
+
     public static void main(String [] args) {
         System.out.println("Jai Maa Bhavani");
 
+        /*
         ArrayList<Integer> Arr = new ArrayList<>(List.of(10, 3 , 12 , 16 , 5 , 7 , 19));
 
         Iterator<Integer> it = Arr.iterator();
@@ -21,6 +44,18 @@ public class Lec11 {
         System.out.println(S);
 
         HashMap<Long , Integer> mp = new HashMap<>();
+         */
+
+        // Number of Subsequences
+
+        int [] a = {4 , 3 , 12 , 9 , 7 , 5};
+        //          0   1   2    3   4   5
+        int n = a.length;
+
+        ArrayList<ArrayList<Integer>> Ans = f(n - 1 , a);
+
+        for(int i = 0; i < Ans.size(); ++i)
+            System.out.println(Ans.get(i));
     }
 }
 
