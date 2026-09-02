@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Problem added">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="103. Binary Tree Zigzag Level Order Traversal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec11/Lec11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec11/Lec11.java" afterDir="false" />
     </list>
@@ -71,14 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Collections to Binary Search">
-      <option name="closed" value="true" />
-      <created>1787283350418</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1787283350418</updated>
     </task>
     <task id="LOCAL-00010" summary="Collections to Binary Search">
       <option name="closed" value="true" />
@@ -464,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788324940709</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="103. Binary Tree Zigzag Level Order Traversal">
+      <option name="closed" value="true" />
+      <created>1788327014709</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1788327014709</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Forest Queries" />
     <MESSAGE value="480. Sliding Window Median" />
     <MESSAGE value="Lets start the LinkedList" />
     <MESSAGE value="142. Linked List Cycle II" />
@@ -504,7 +503,8 @@
     <MESSAGE value="98. Validate Binary Search Tree" />
     <MESSAGE value="173. Binary Search Tree Iterator" />
     <MESSAGE value="Problem added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problem added" />
+    <MESSAGE value="103. Binary Tree Zigzag Level Order Traversal" />
+    <option name="LAST_COMMIT_MESSAGE" value="103. Binary Tree Zigzag Level Order Traversal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

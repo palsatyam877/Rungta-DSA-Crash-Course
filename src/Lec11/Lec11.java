@@ -12,6 +12,15 @@ public class Lec11 {
 
         while(it.hasNext())
             System.out.println(it.next());
+
+        StringBuffer S = new StringBuffer();
+        S.append('r');
+        S.append('q');
+        System.out.println(S);
+        S.reverse();
+        System.out.println(S);
+
+        HashMap<Long , Integer> mp = new HashMap<>();
     }
 }
 
@@ -97,3 +106,63 @@ class Solution {
  */
 
 // https://leetcode.com/problems/repeated-dna-sequences/description/
+
+/*
+class Solution {
+    public List<String> findRepeatedDnaSequences(String s) {
+        HashMap<Character , Integer> mp = new HashMap<>();
+        mp.put('A' , 1);
+        mp.put('C' , 2);
+        mp.put('G' , 3);
+        mp.put('T' , 4);
+
+        HashMap<Integer , Character> mpR = new HashMap<>();
+        mpR.put(1 , 'A');
+        mpR.put(2 , 'C');
+        mpR.put(3 , 'G');
+        mpR.put(4 , 'T');
+
+        List<String> Ans = new ArrayList<String>();
+
+        HashMap<Long,Integer> Cnt = new HashMap<>();
+
+        for(int i = 0; i + 10 <= s.length(); ++i) {
+           long Curr = 0;
+
+            for(int j = i; j < i + 10; ++j) {
+               Curr *= 10;
+               Curr += mp.get(s.charAt(j));
+            }
+
+            if(Cnt.containsKey(Curr))
+                Cnt.put(Curr , Cnt.get(Curr) + 1);
+            else
+                Cnt.put(Curr , 1);
+        }
+
+        // System.out.println(Cnt);
+
+        for(Map.Entry<Long , Integer> C : Cnt.entrySet()) {
+            long K = C.getKey();
+            Integer F = C.getValue();
+
+            if(F >= 2) {
+               StringBuffer S = new StringBuffer();
+               Long tempC = K;
+
+                while(tempC > 0) {
+                   S.append(mpR.get((int)(tempC % 10) ));
+                  tempC /= 10;
+                 }
+
+                S.reverse();
+
+                Ans.add(S.toString());
+            }
+        }
+
+        return Ans;
+    }
+}
+
+*/
