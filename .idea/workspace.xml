@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="46. Permutations">
-      <change afterPath="$PROJECT_DIR$/src/Lec12/Lec12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Modular Exponentiation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,14 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00014" summary="278. First Bad Version">
-      <option name="closed" value="true" />
-      <created>1787300087784</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1787300087784</updated>
     </task>
     <task id="LOCAL-00015" summary="875. Koko Eating Bananas">
       <option name="closed" value="true" />
@@ -465,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788347721982</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Modular Exponentiation">
+      <option name="closed" value="true" />
+      <created>1788408724196</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1788408724196</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -480,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="61. Rotate List" />
     <MESSAGE value="Updated List" />
     <MESSAGE value="237. Delete Node in a Linked List" />
     <MESSAGE value="Starting with Trees" />
@@ -505,7 +501,8 @@
     <MESSAGE value="187. Repeated DNA Sequences" />
     <MESSAGE value="Generation of all Subsequences" />
     <MESSAGE value="46. Permutations" />
-    <option name="LAST_COMMIT_MESSAGE" value="46. Permutations" />
+    <MESSAGE value="Modular Exponentiation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modular Exponentiation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
