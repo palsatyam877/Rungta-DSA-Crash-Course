@@ -63,3 +63,53 @@ class Solution {
     }
 }
 */
+
+// https://leetcode.com/problems/power-of-two/submissions/2129225712/?envType=problem-list-v2&envId=recursion
+
+/*
+class Solution {
+    boolean f(int N) {
+        if(N == 1)
+           return true;
+        return (N % 2 == 0) && f(N / 2);
+    }
+
+    public boolean isPowerOfTwo(int n) {
+        if(n == 0)
+            return false;
+        return f(n);
+    }
+}
+*/
+
+/*
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if(n <= 0)
+            return false;
+
+        while(n > 1) {
+            if((n & 1) != 0)
+                return false;
+            else
+               n = n / 2;
+        }
+
+        return true;
+    }
+}
+
+*/
+
+/*
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        if(n <= 0)
+            return false;
+
+        return __builtin_popcount(n) == 1;
+    }
+};
+*/
+
