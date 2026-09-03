@@ -321,3 +321,56 @@ class Solution {
 }
 */
 
+// https://leetcode.com/problems/longest-palindromic-substring/
+
+/*
+class Solution {
+    public int f(int l , int r , String S , int [][] dp) {
+        if(l == r)
+            return 1;
+
+        if(r == l + 1)
+            if(S.charAt(l)== S.charAt(r))
+                return 1;
+            else
+               return -1;
+
+        if(dp[l + 1][r - 1] != 0)  {
+            if(dp[l + 1][r - 1] == -1)
+               return -1;
+            else {
+                if(S.charAt(l) != S.charAt(r))
+                   return -1;
+                else
+                   return 1;
+            }
+        }
+
+
+        return dp[l][r] = ((f(l + 1 , r - 1 , S , dp) == 1) && (S.charAt(l) == S.charAt(r))) ? 1 : -1;
+    }
+
+    public String longestPalindrome(String S) {
+        int n = S.length();
+
+        int [][] dp = new int[S.length() + 1][S.length() + 1];
+
+        StringBuffer Ans = new StringBuffer();
+
+        for(int l = S.length(); l >= 1; --l)
+            for(int i = 0; i + l - 1 < n; ++i)
+                if(f(i , i + l - 1 , S , dp) == 1) {
+                    for(int k = i; k <= i + l - 1; ++k)
+                        Ans.append(S.charAt(k));
+
+                    return Ans.toString();
+                }
+
+
+
+        return S.toString();
+    }
+}
+
+ */
+
