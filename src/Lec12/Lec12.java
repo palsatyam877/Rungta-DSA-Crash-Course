@@ -214,3 +214,40 @@ class Solution {
 */
 
 // https://leetcode.com/problems/combinations/submissions/1916018336/
+
+/*
+class Solution {
+    public List<List<Integer>> combine(int n, int k) {
+        if(n == k) {
+            List<List<Integer>> C = new ArrayList<>();
+            List<Integer> C1 = new ArrayList<>();
+
+            for(int i = 0; i < n; ++i)
+               C1.add(i + 1);
+
+            C.add(C1);
+
+            return C;
+        }
+
+        if(k == 0) {
+            List<List<Integer>> C = new ArrayList<>();
+            List<Integer> C1 = new ArrayList<>();
+            C.add(C1);
+
+            return C;
+        }
+
+        List<List<Integer>> A = combine(n - 1 , k);
+        List<List<Integer>> B = combine(n - 1 , k - 1);
+
+        for(int i = 0; i < B.size(); ++i) {
+            B.get(i).add(n);
+            A.add(B.get(i));
+        }
+
+        return A;
+    }
+}
+
+*/
