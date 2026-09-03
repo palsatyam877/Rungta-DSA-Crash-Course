@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="3304. Find the K-th Character in String Game I" />
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="3304. Find the K-th Character in String Game I&#10;Solution -&gt; Iterartive">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lec12/Lec12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec12/Lec12.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,14 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00019" summary="E. Building an Aquarium">
-      <option name="closed" value="true" />
-      <created>1787379957831</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1787379957831</updated>
     </task>
     <task id="LOCAL-00020" summary="2402. Meeting Rooms III">
       <option name="closed" value="true" />
@@ -462,7 +457,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788414186076</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="3304. Find the K-th Character in String Game I&#10;Solution -&gt; Iterartive">
+      <option name="closed" value="true" />
+      <created>1788415560764</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1788415560765</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -477,7 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tree in Between" />
     <MESSAGE value="Lets Start with Trees Properly" />
     <MESSAGE value="104. Maximum Depth of Binary Tree -&gt; DFS" />
     <MESSAGE value="104. Maximum Depth of Binary Tree -&gt; BFS" />
@@ -502,7 +504,8 @@
     <MESSAGE value="Modular Exponentiation Solution Iterative" />
     <MESSAGE value="231. Power of Two" />
     <MESSAGE value="3304. Find the K-th Character in String Game I" />
-    <option name="LAST_COMMIT_MESSAGE" value="3304. Find the K-th Character in String Game I" />
+    <MESSAGE value="3304. Find the K-th Character in String Game I&#10;Solution -&gt; Iterartive" />
+    <option name="LAST_COMMIT_MESSAGE" value="3304. Find the K-th Character in String Game I&#10;Solution -&gt; Iterartive" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,21 +4,31 @@ public class Lec12 {
     public static void main(String [] args) {
         System.out.println("Jai Maa Jagad Amba");
 
-        char x = 'x';
-        x++;
+//        char x = 'x';
+//        x++;
+//
+//        x %= 26;
+//
+//        System.out.println(x);
+//
+//        x++;
+//        x %= 26;
+//
+//        System.out.println(x);
+//
+//        x++;
+//
+//        System.out.println(x);
 
-        x %= 26;
+        int mxBitOn = -1;
+        int N = 15;
 
-        System.out.println(x);
+        for(int bit = 0; bit <= 31; ++bit) {
+            if((N & (1 << bit)) != 0)
+                mxBitOn = bit;
+        }
 
-        x++;
-        x %= 26;
-
-        System.out.println(x);
-
-        x++;
-
-        System.out.println(x);
+        System.out.println(1 << (mxBitOn + 1));
     }
 }
 
