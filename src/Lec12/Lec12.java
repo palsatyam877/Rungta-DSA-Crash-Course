@@ -251,3 +251,26 @@ class Solution {
 }
 
 */
+
+/*
+class Solution {
+    public List<List<Integer>> combine(int n, int k) {
+        List<List<Integer>> Ans = new ArrayList<>();
+
+        for(int mask = 0; mask < (1 << n); ++mask) {
+            List<Integer> C = new ArrayList<>();
+
+            if(Integer.bitCount(mask) == k)
+                for(int j = 0; j < n; ++j)
+                    if((mask & (1 << j)) != 0)
+                        C.add(j + 1);
+
+            if(C.size() > 0)
+                Ans.add(C);
+        }
+
+        return Ans;
+    }
+}
+*/
+

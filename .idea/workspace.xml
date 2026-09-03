@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="3304. Find the K-th Character in String Game I -&gt; Recursive Solution">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="77. Combinations -&gt; Recursive Solution">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lec12/Lec12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec12/Lec12.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,22 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00022" summary="BS Solution">
-      <option name="closed" value="true" />
-      <created>1787554646231</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1787554646231</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Reshuffle">
-      <option name="closed" value="true" />
-      <created>1787559574058</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1787559574058</updated>
     </task>
     <task id="LOCAL-00024" summary="151. Reverse Words in a String">
       <option name="closed" value="true" />
@@ -464,7 +449,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788423200303</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="77. Combinations">
+      <option name="closed" value="true" />
+      <created>1788423283201</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1788423283201</updated>
+    </task>
+    <task id="LOCAL-00072" summary="77. Combinations -&gt; Recursive Solution">
+      <option name="closed" value="true" />
+      <created>1788426267806</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1788426267806</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,8 +480,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="104. Maximum Depth of Binary Tree -&gt; BFS" />
-    <MESSAGE value="110. Balanced Binary Tree" />
     <MESSAGE value="100. Same Tree" />
     <MESSAGE value="572. Subtree of Another Tree" />
     <MESSAGE value="102. Binary Tree Level Order Traversal" />
@@ -504,7 +503,9 @@
     <MESSAGE value="3304. Find the K-th Character in String Game I&#10;Solution -&gt; Iterartive" />
     <MESSAGE value="Next Maximum Binary Power" />
     <MESSAGE value="3304. Find the K-th Character in String Game I -&gt; Recursive Solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="3304. Find the K-th Character in String Game I -&gt; Recursive Solution" />
+    <MESSAGE value="77. Combinations" />
+    <MESSAGE value="77. Combinations -&gt; Recursive Solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="77. Combinations -&gt; Recursive Solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
