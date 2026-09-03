@@ -1,5 +1,7 @@
 package Lec12;
 
+import java.util.Stack;
+
 public class Lec12 {
     public static void main(String [] args) {
         System.out.println("Jai Maa Jagad Amba");
@@ -20,15 +22,29 @@ public class Lec12 {
 //
 //        System.out.println(x);
 
-        int mxBitOn = -1;
-        int N = 15;
+//        int mxBitOn = -1;
+//        int N = 15;
+//
+//        for(int bit = 0; bit <= 31; ++bit) {
+//            if((N & (1 << bit)) != 0)
+//                mxBitOn = bit;
+//        }
 
-        for(int bit = 0; bit <= 31; ++bit) {
-            if((N & (1 << bit)) != 0)
-                mxBitOn = bit;
-        }
+//        System.out.println(1 << (mxBitOn + 1));
 
-        System.out.println(1 << (mxBitOn + 1));
+        Stack<Integer> S = new Stack<>();
+
+        S.push(4);
+        S.push(3);
+        S.push(1);
+        S.push(5);
+        S.push(9);
+        S.push(12);
+
+//        while(S.size() > 0) {
+//            System.out.println(S.peek());
+//            S.pop();
+//        }
     }
 }
 
@@ -275,4 +291,33 @@ class Solution {
 */
 
 // https://leetcode.com/problems/longest-palindromic-substring/description/
+
+/*
+class Solution {
+    public static void f(Stack<Integer> st , Stack<Integer> stR) {
+        if(stR.size() == 0)
+            return;
+
+        int C = stR.peek();
+        stR.pop();
+
+        f(st , stR);
+
+        st.push(C);
+    }
+
+    public static void reverseStack(Stack<Integer> st) {
+        // code here
+
+        Stack<Integer> stR = new Stack<>();
+
+        while(st.size() > 0) {
+            stR.push(st.peek());
+            st.pop();
+        }
+
+        f(st , stR);
+    }
+}
+*/
 
