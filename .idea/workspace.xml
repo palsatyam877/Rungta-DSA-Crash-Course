@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="231. Power of Two">
-      <change beforePath="$PROJECT_DIR$/src/Lec12/Lec12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec12/Lec12.java" afterDir="false" />
-    </list>
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="3304. Find the K-th Character in String Game I" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,14 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00018" summary="E. Building an Aquarium">
-      <option name="closed" value="true" />
-      <created>1787379470716</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1787379470716</updated>
     </task>
     <task id="LOCAL-00019" summary="E. Building an Aquarium">
       <option name="closed" value="true" />
@@ -464,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788414142979</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="3304. Find the K-th Character in String Game I">
+      <option name="closed" value="true" />
+      <created>1788414186076</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1788414186076</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Starting with Trees 1" />
     <MESSAGE value="Tree in Between" />
     <MESSAGE value="Lets Start with Trees Properly" />
     <MESSAGE value="104. Maximum Depth of Binary Tree -&gt; DFS" />
@@ -504,7 +501,8 @@
     <MESSAGE value="Modular Exponentiation Solution" />
     <MESSAGE value="Modular Exponentiation Solution Iterative" />
     <MESSAGE value="231. Power of Two" />
-    <option name="LAST_COMMIT_MESSAGE" value="231. Power of Two" />
+    <MESSAGE value="3304. Find the K-th Character in String Game I" />
+    <option name="LAST_COMMIT_MESSAGE" value="3304. Find the K-th Character in String Game I" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,6 +3,22 @@ package Lec12;
 public class Lec12 {
     public static void main(String [] args) {
         System.out.println("Jai Maa Jagad Amba");
+
+        char x = 'x';
+        x++;
+
+        x %= 26;
+
+        System.out.println(x);
+
+        x++;
+        x %= 26;
+
+        System.out.println(x);
+
+        x++;
+
+        System.out.println(x);
     }
 }
 
@@ -115,3 +131,30 @@ public:
 
 // https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/description/?envType=problem-list-v2&envId=recursion
 
+/*
+class Solution {
+    public char kthCharacter(int K) {
+        StringBuffer S = new StringBuffer();
+        S.append('a');
+
+        int N = 1;
+
+        while(S.length() < K) {
+            int sz = S.length();
+
+            for(int i = 0; i < sz; ++i) {
+                char X = S.charAt(i);
+
+                if(X == 'z')
+                    X = 'a';
+                else
+                   ++X;
+
+                S.append(X);
+            }
+        }
+
+        return S.charAt(K - 1);
+    }
+}
+*/
