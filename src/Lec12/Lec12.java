@@ -33,3 +33,33 @@ class Solution {
     }
 }
 */
+
+/*
+class Solution {
+
+
+    public int powMod(int x, int n, int m) {
+        // code here
+
+        long X = (long)x;
+        long N = (long)n;
+        long M = (long)m;
+
+        long [] binPow = new long [32];
+        binPow[0] = X%M;
+
+        for(int bit = 1; bit <= 31; ++bit)
+            binPow[bit] = (binPow[bit - 1] * binPow[bit - 1]) % M;
+
+        long Ans = 1;
+
+        for(int bit = 0; bit <= 31; ++bit)
+           if((N & ((long)1 << bit)) != 0) {
+               Ans *= binPow[bit];
+               Ans %= M;
+           }
+
+        return (int)Ans;
+    }
+}
+*/
