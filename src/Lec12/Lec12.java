@@ -168,3 +168,47 @@ class Solution {
     }
 }
 */
+
+/*
+class Solution {
+    public StringBuffer f(int N) {
+        if(N == 1) {
+            StringBuffer S = new StringBuffer();
+            S.append('a');
+
+            return S;
+        }
+
+        StringBuffer soFar = f(N / 2);
+
+        int L = soFar.length();
+
+        for(int i = 0; i < L; ++i) {
+            char C = soFar.charAt(i);
+
+            if(C == 'z')
+              C = 'a';
+            else
+              C++;
+
+            soFar.append(C);
+        }
+
+        return soFar;
+    }
+
+    public char kthCharacter(int K) {
+        int mxBitOn = -1;
+        int N = K;
+
+        for(int bit = 0; bit <= 31; ++bit) {
+            if((N & (1 << bit)) != 0)
+                mxBitOn = bit;
+        }
+
+        int Len = 1 << (mxBitOn + 1);
+
+        return f(Len).charAt(K - 1);
+    }
+}
+*/
