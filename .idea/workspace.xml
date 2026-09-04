@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="5. Longest Palindromic Substring">
-      <change afterPath="$PROJECT_DIR$/src/Lec13/Lec13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lec14/StoneGame.java" afterDir="false" />
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Manual Input Output in Java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lec13/Lec13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec13/Lec13.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,14 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Sliding Window Problem">
-      <option name="closed" value="true" />
-      <created>1787651767568</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1787651767568</updated>
     </task>
     <task id="LOCAL-00029" summary="Sliding Window Problem">
       <option name="closed" value="true" />
@@ -468,7 +459,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788433786210</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Manual Input Output in Java">
+      <option name="closed" value="true" />
+      <created>1788499040590</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1788499040590</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="102. Binary Tree Level Order Traversal" />
     <MESSAGE value="Trees Continue" />
     <MESSAGE value="199. Binary Tree Right Side View" />
     <MESSAGE value="199. Binary Tree Right Side View&#10;DFS" />
@@ -508,7 +506,8 @@
     <MESSAGE value="77. Combinations -&gt; Recursive Solution" />
     <MESSAGE value="Reverse a Stack" />
     <MESSAGE value="5. Longest Palindromic Substring" />
-    <option name="LAST_COMMIT_MESSAGE" value="5. Longest Palindromic Substring" />
+    <MESSAGE value="Manual Input Output in Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manual Input Output in Java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
