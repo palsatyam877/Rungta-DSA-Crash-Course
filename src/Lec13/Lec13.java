@@ -10,6 +10,8 @@ public class Lec13 {
         for(int i = 0; i < a.length; ++i)
             nse[i] = -1;
 
+        String s = "dgbmg";
+
         for(int i = 0; i < a.length; ++i)
             for(int j = i; j < a.length; ++j)
                  if(a[j] < a[i]) {
@@ -87,4 +89,49 @@ class Solution {
     }
 }
 
+*/
+
+// https://www.geeksforgeeks.org/problems/steps-by-knight5927/1
+/*
+class Solution {
+	public:
+
+	int minStepToReachTarget(vector<int>& K, vector<int>& T, int n) {
+		vector<pair<int, int>> dir = {
+			{ 2, 1 }, { -2, 1 }, { 2, -1}, {-2, -1}, { 1, 2 }, { -1, 2 }, { 1, -2 }, {-1, -2}
+		};
+
+		queue<pair<int, int>> qu;
+		qu.push({ K[0] - 1, K[1] - 1 });
+
+		vector<vector<int>> vis(1000 + 1, vector<int>(1000 + 1, -1));
+		vis[K[0] - 1][K[1] - 1] = 0;
+
+		// 		cout << "hello" << " ^\n";
+
+		while (qu.size() > 0) {
+			int i = qu.front().first;
+			int j = qu.front().second;
+
+// 			cout << i << " " << j << "\n";
+			qu.pop();
+
+			for (int k = 0; k < dir.size(); ++k) {
+				int I = i + dir[k].first, J = j + dir[k].second;
+
+				if (I < 0 || J < 0 || I >= n || j >= n)
+					continue;
+
+				if (vis[I][J] == -1) {
+
+					vis[I][J] = vis[i][j] + 1;
+					qu.push({ I, J });
+				}
+			}
+		}
+
+		return vis[T[0] - 1][T[1] - 1];
+	}
+
+};
 */
