@@ -61,3 +61,30 @@ public class Lec13 {
 }
 
 // https://www.geeksforgeeks.org/problems/immediate-smaller-element1142/1
+
+/*
+class Solution {
+    static ArrayList<Integer> nextSmallerEle(int[] a) {
+        // code here
+        ArrayList<Integer> nse = new ArrayList<>();
+        int n = a.length;
+
+        for(int i = 0; i < n; ++i)
+            nse.add(-1);
+
+        Stack<Integer> stk = new Stack(); // pushing indexes
+
+        for(int i = 0; i < n; ++i) {
+            while((stk.size() > 0)  && (a[i] < a[stk.peek()])) {
+                nse.set(stk.peek() , a[i]);
+                stk.pop();
+            }
+
+            stk.push(i);
+        }
+
+        return nse;
+    }
+}
+
+*/
