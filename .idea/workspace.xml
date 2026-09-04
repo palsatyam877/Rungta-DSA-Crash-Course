@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="Reverse a Stack">
+    <list default="true" id="44344cf1-e737-4307-bd04-d416502891d9" name="Changes" comment="5. Longest Palindromic Substring">
+      <change afterPath="$PROJECT_DIR$/src/Lec13/Lec13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lec14/StoneGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lec12/Lec12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lec12/Lec12.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
     "Application.Lec10.executor": "Run",
     "Application.Lec11.executor": "Run",
     "Application.Lec12.executor": "Run",
+    "Application.Lec13.executor": "Run",
     "Application.Lec2.executor": "Run",
     "Application.Lec3.executor": "Run",
     "Application.Lec4.executor": "Run",
@@ -58,6 +60,7 @@
     "Application.Lec8.executor": "Run",
     "Application.Lec9.executor": "Run",
     "Application.SlidingWindow.executor": "Run",
+    "Application.StoneGame.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -72,14 +75,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787165418429</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Sliding Window Problem">
-      <option name="closed" value="true" />
-      <created>1787639495889</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1787639495889</updated>
     </task>
     <task id="LOCAL-00028" summary="Sliding Window Problem">
       <option name="closed" value="true" />
@@ -465,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788432114023</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="5. Longest Palindromic Substring">
+      <option name="closed" value="true" />
+      <created>1788433786210</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1788433786210</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -503,9 +506,9 @@
     <MESSAGE value="3304. Find the K-th Character in String Game I -&gt; Recursive Solution" />
     <MESSAGE value="77. Combinations" />
     <MESSAGE value="77. Combinations -&gt; Recursive Solution" />
-    <MESSAGE value="5. Longest Palindromic Substring" />
     <MESSAGE value="Reverse a Stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverse a Stack" />
+    <MESSAGE value="5. Longest Palindromic Substring" />
+    <option name="LAST_COMMIT_MESSAGE" value="5. Longest Palindromic Substring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
